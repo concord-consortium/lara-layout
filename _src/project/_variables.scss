@@ -32,3 +32,37 @@ $highlight: #ea4c88;  //Pink
 $sans:Arial,Helvetica,Verdana,sans-serif;
 $serif:Georgia,Times,Times New Roman,serif;
 $mono:"Courier New",Courier,mono;
+
+
+
+
+// Variables for Molecular Workbench
+// These are imported into screen.scss
+
+
+// fonts
+$mw-main-font: Lato-Regular, Helvetica, Arial, sans-serif;
+
+$activity-main-font: Lato-Regular, Helvetica, Arial, sans-serif;
+
+// color
+
+$mw-header: #bddfdf;
+
+$mw-header-text: darken(#bddfdf, 40%);
+
+$mw-question-header: #6cc4d8;
+
+// $mw-subhead-color: #3a878b;
+$mw-subhead-color: #6fc5d8; // (111, 197, 216)
+
+$mw-poop-color: #3a878b;
+
+// #6fc5d8
+
+
+
+
+
+
+$mw-headline-color: #eb8723;
