@@ -48,9 +48,6 @@ strong	{	font-weight: bold;	}
 em   	{	font-style: italic;	}
 
 
- 
-// body { background: pink; }
-
 header,
 footer {
 	margin: 0 0 2em;
@@ -61,24 +58,6 @@ footer {
 
 footer { margin-bottom: 0; }
 
-
-
-// *********************************************
-// Fonts
-// *********************************************
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
-}
 
 
 
@@ -96,11 +75,9 @@ footer { margin-bottom: 0; }
 
 
 .activity-mod {
-  // background: #f9f9f9;
-  // border: 1px solid red;
   margin-bottom: 2em;
   position: relative;
-  font-family: $activity-main-font;
+  font-family: $lato-reg;
 }
 
 
@@ -109,7 +86,6 @@ footer { margin-bottom: 0; }
 // --------------------------------
 
 .activity-nav-mod {
-  // color: pink;
   margin: 0 0 5.07692307692308em;
   position: relative;
   width: 100%;
@@ -237,6 +213,7 @@ footer { margin-bottom: 0; }
   .pagination-link {
     background: #bbdfdf;
     border-radius: 0.25em;
+
     color: #fff;
     padding: 0.75em 1em;
     display: block;
@@ -330,12 +307,13 @@ footer { margin-bottom: 0; }
 
 // Headline block
 .content-hdr {
-  font-family: $mw-main-font;
+  font-family: $lato-reg;
   margin-bottom: 2em;
 
   .h2 {
+    font-family: $lato-light;
     font-size: 2.30769230769231em;  // 30 / 13
-    font-weight: normal;
+    font-weight: 100;
     letter-spacing: -1px;
     color: $mw-headline-color;
     margin-bottom: 0.86666666666667em; // 26 / 30
@@ -352,7 +330,7 @@ footer { margin-bottom: 0; }
 .intro-mod {
   font-size: 1.23076923076923em;  // 16 / 13
   line-height: 1.45em;
-  font-family: $mw-main-font;
+  font-family: $lato-reg;
   margin-bottom: 3em;
   max-width: 75%;
 

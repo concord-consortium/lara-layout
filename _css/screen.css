@@ -269,6 +269,27 @@ button {
 /* ! Custom Fonts					   			  */
 /* !============================================= */
 @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Lato Light"), local("Lato-Light"), url(http://fonts.googleapis.com/css?family=Lato:100) format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+
+@font-face {
   font-family: "Knockout32";
   src: url('../_fonts/knockout/knockout-32.eot');
   src: url('../_fonts/knockout/knockout-32?#iefix') format("embedded-opentype"), url('../_fonts/knockout/knockout-32.woff') format("woff"), url('../_fonts/knockout/knockout-32.ttf') format("truetype"), url('../_fonts/knockout/knockout-32.svg#webfontABgg4EO0') format("svg");
@@ -391,20 +412,6 @@ footer {
   margin-bottom: 0;
 }
 
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
-}
-
 .contain {
   width: 960px;
   margin: 0 auto;
@@ -413,7 +420,7 @@ footer {
 .activity-mod {
   margin-bottom: 2em;
   position: relative;
-  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
 }
 
 .activity-nav-mod {
@@ -609,12 +616,13 @@ footer {
 }
 
 .content-hdr {
-  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
   margin-bottom: 2em;
 }
 .content-hdr .h2 {
+  font-family: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
   font-size: 2.30769230769231em;
-  font-weight: normal;
+  font-weight: 100;
   letter-spacing: -1px;
   color: #eb8723;
   margin-bottom: 0.86666666666667em;
@@ -628,7 +636,7 @@ footer {
 .intro-mod {
   font-size: 1.23076923076923em;
   line-height: 1.45em;
-  font-family: Lato-Regular, Helvetica, Arial, sans-serif;
+  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
   margin-bottom: 3em;
   max-width: 75%;
 }
