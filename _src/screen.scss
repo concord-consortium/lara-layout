@@ -33,7 +33,7 @@
 
 .mod-border-rounded {
   border: 1px solid $black-15;
-  border-radius: 0 0 1em 1em;
+  @include border-radius(0 0 13px 13px);
 }
 
   
@@ -119,8 +119,8 @@ footer { margin-bottom: 0; }
   &.fixed {
     position: fixed;
     top: 0;
-    background: $black-5;
-    box-shadow: 0 12px 12px $black-15;
+    background: #fff;
+    @include box-shadow(0 4px 8px rgba($black-15, 0.3) );
     padding: 1em;
     z-index: 1;
   }
@@ -182,17 +182,20 @@ footer { margin-bottom: 0; }
   .prev,
   .next {
     background: #bbdfdf;
-    border-radius: 50%;
+    @include border-radius(50%);
     font-size: 2em;
     padding: 0.05em 0 0.15em;
     text-align: center;
     &:hover {
       background: darken(#bbdfdf, 10%);
     }
+    
     &:active {
       background: #6ac5d8;
     }
+
   }
+
   .prev {
     float: left;
     width: 5%;
@@ -207,6 +210,7 @@ footer { margin-bottom: 0; }
     width: 90%;
     float: left;
   }
+
 }
 
 .pagination {
@@ -225,6 +229,7 @@ footer { margin-bottom: 0; }
   text-align: center;
   display: inline-block;
   // padding: 1em;
+
   &:first-child {
     margin-left: 0;
   }
@@ -235,13 +240,17 @@ footer { margin-bottom: 0; }
     color: #fff;
     padding: 0.75em 1em;
     display: block;
+
     &:hover {
       background: darken(#bbdfdf, 10%);
     }
+
     &.selected {
       background: #6ac5d8;
     }
+
   }
+
 }
 
 
@@ -382,12 +391,14 @@ footer { margin-bottom: 0; }
   position: relative;
   padding: 0.55em;
   margin: 0 0 1em;
+
   .h5 {
     position: relative;
     color: #fff;
     font-size: 1.23076923076923; // 16/13
     @extend .drk-text-shadow;
   }
+
 }
 
 
@@ -403,7 +414,6 @@ footer { margin-bottom: 0; }
 
 // Sidebar
 // --------------------------------
-
 .sidebar-mod {
   width: 7%;
   position: absolute;
@@ -412,7 +422,8 @@ footer { margin-bottom: 0; }
   background: $mw-question-header;
   text-align: center;
   padding: 1em;
-  border-radius: 0.45em 0 0 0.45em;
+  @include border-radius(8px 0 0 8px);
+
   .h5 {
     text-transform: uppercase;
     color: #fff;
@@ -426,10 +437,12 @@ footer { margin-bottom: 0; }
     width: 60%;
     background: #fff;
     background: rgba($mw-question-header, 0.9);
-    box-shadow: 0 5px 20px -3px $black-15;
+    @include box-shadow(0 5px 20px -3px $black-15);
+
     .sidebar-bd {
       display: block;
     }
+
   }
 }
 
@@ -442,11 +455,7 @@ footer { margin-bottom: 0; }
 
 // Related module
 // --------------------------------
-
-// related-mod
 .related-mod {
-  // border: 1px solid $black-15;
-  // border-radius: 0 0 1em 1em;
   margin-bottom: 2em;
   @extend .mod-border-rounded;
 }
@@ -457,7 +466,7 @@ footer { margin-bottom: 0; }
   padding: 1em;
   color: #fff;
   margin-bottom: 1em;
-  box-shadow: 0 2px 5px -1px $black-15;
+  @include box-shadow(0 2px 5px -1px $black-15);
   font-size: 1.25em;
 }
 
@@ -473,17 +482,20 @@ footer { margin-bottom: 0; }
   width: 30%;
   margin-left: 5%;
   float: left;
+
   &:first-child {
     margin-left: 0;
   }
+
   .h6 {
     font-size: 1.25em;
     margin-bottom: 0.55em;
     color: #000;
   }
+
   .related-item-txt {
     font-size: 1.25em;
-    // margin-bottom: 1em;
+
     a {
       display: block;
       padding: 0.55em;
@@ -492,35 +504,42 @@ footer { margin-bottom: 0; }
       border-radius: 0.25em;
       margin-top: 1.25em;
       text-align: center;
+
       &:hover {
         background: darken(#e9e9e9, 8%);
       }
+
     }
   }
-  
+
 }
 
 .related-img {
   margin-bottom: 1em;
   width: 30%;
+
   img {
     max-width: 100%;
   }
+
 }
 
 
 // Site Footer
 // --------------------------------
-
 footer {
   .footer-txt {
     margin-bottom: 1em;
     color: $mw-header-text;
+
     @extend .lt-text-shadow;
+
     &:last-child {
       margin-bottom: 0;
     }
+
   }
+
 }
 
 
