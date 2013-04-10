@@ -109,10 +109,11 @@ footer { margin-bottom: 0; }
 // --------------------------------
 
 .activity-nav-mod {
-  color: pink;
+  // color: pink;
   margin: 0 0 5.07692307692308em;
   position: relative;
   width: 100%;
+  color: #fff;
   @include pie-clearfix;
 
   &.fixed {
@@ -127,36 +128,36 @@ footer { margin-bottom: 0; }
 
 .activity-nav-logo {
   border: 1px solid pink;
-  width: 80px;
+  color: pink;
   height: 40px;
   float: left;
 }
 
 .activity-nav {
-  border: 1px solid pink;
+  // border: 1px solid pink;
   margin: 0 auto;
-  width: 50%;
+  // width: 50%;
   position: relative;
   padding: 1em;
   @include pie-clearfix;
   .prev,
   .next {
-    background: #666;
-    width: 30px;
-    padding: 0.55em;
-    border-radius: 30px;
-    position: absolute;
-    top: 1em;
+    // background: #666;
+    // width: 30px;
+    // padding: 0.55em;
+    // border-radius: 30px;
+    // position: absolute;
+    // top: 1em;
     // width: 5%;
-    text-align: center;
+    // text-align: center;
   }
   .prev {
     // float: left;
-    left: 0;
+    // left: 0;
   }
   .next {
     // float: right;
-    right: 0;
+    // right: 0;
   }
 }
 
@@ -177,7 +178,21 @@ footer { margin-bottom: 0; }
 .paginas {
 
   @include pie-clearfix;
-
+  
+  .prev,
+  .next {
+    background: #bbdfdf;
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 0.05em 0 0.15em;
+    text-align: center;
+    &:hover {
+      background: darken(#bbdfdf, 10%);
+    }
+    &:active {
+      background: #6ac5d8;
+    }
+  }
   .prev {
     float: left;
     width: 5%;
@@ -196,23 +211,36 @@ footer { margin-bottom: 0; }
 
 .pagination {
   @include pie-clearfix;
-  width: auto;
+  // width: auto;
+  text-align: center;
+  // border: 1px solid pink;
 }
 
 .pagination-item {
-  background: #666;
-  float: left;
+  // background: #666;
+  // float: left;
   margin-left: 1em;
   border-radius: 0.25em;
   // width: 8%;
   text-align: center;
+  display: inline-block;
+  // padding: 1em;
   &:first-child {
     margin-left: 0;
   }
+
   .pagination-link {
-    color: pink;
-    padding: 0.35em 0.35em;
+    background: #bbdfdf;
+    border-radius: 0.25em;
+    color: #fff;
+    padding: 0.75em 1em;
     display: block;
+    &:hover {
+      background: darken(#bbdfdf, 10%);
+    }
+    &.selected {
+      background: #6ac5d8;
+    }
   }
 }
 
