@@ -51,14 +51,42 @@ em   	{	font-style: italic;	}
 header,
 footer {
 	margin: 0 0 26px;
-	padding: 26px;
+	// padding: 26px;
 	background: $mw-header;
 	color: white;
 }
 
-footer { margin-bottom: 0; }
+footer { 
+  margin-bottom: 0; 
+  padding: 26px;
+}
 
 
+
+// Site header
+// --------------------------------
+
+.site-logo-mod {
+  @include pie-clearfix;
+  padding: 13px 0;
+}
+
+.site-logo {
+  width: 12%;
+
+  img {
+    max-width: 100%;
+  }
+
+  &.logo-l {
+    float: left;
+  }
+
+  &.logo-r {
+    float: right;
+  }
+
+}
 
 
 
@@ -90,6 +118,7 @@ footer { margin-bottom: 0; }
   position: relative;
   width: 100%;
   color: #fff;
+  // background: green;
   @include pie-clearfix;
 
   &.fixed {
@@ -103,10 +132,14 @@ footer { margin-bottom: 0; }
 }
 
 .activity-nav-logo {
-  border: 1px solid pink;
+  // border: 1px solid pink;
   color: pink;
-  height: 40px;
+  // height: 40px;
   float: left;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .activity-nav {
@@ -436,7 +469,7 @@ footer { margin-bottom: 0; }
 // Related module
 // --------------------------------
 .related-mod {
-  margin-bottom: 26px;
+  margin-bottom: 48px;
   @extend .mod-border-rounded;
   border-top: none;
 }
@@ -504,6 +537,23 @@ footer { margin-bottom: 0; }
   }
 
 }
+
+
+// Activity footer
+// --------------------------------
+.activity-footer-mod {
+  // border: 1px solid pink;
+  margin-bottom: 48px;
+
+  .site-logo {
+    margin: 0 auto;
+    // width: 20%;
+  }
+}
+
+
+
+
 
 
 // Site Footer
