@@ -676,6 +676,15 @@ footer {
   max-width: 75%;
 }
 
+.content-mod {
+  *zoom: 1;
+}
+.content-mod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .interactive-mod {
   margin-bottom: 52px;
   width: 100%;
@@ -758,6 +767,12 @@ footer {
 .related-mod {
   margin-bottom: 48px;
   border-top: none;
+  *zoom: 1;
+}
+.related-mod:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .related-hdr {
@@ -773,6 +788,12 @@ footer {
 
 .related-bd {
   padding: 26px;
+  *zoom: 1;
+}
+.related-bd:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .related-items {

@@ -34,51 +34,75 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <body>
-	<!-- <div class="ups-project-title-wrap">
-		<div class="ups-project-title">Full Width Interactive Page</div>
-		<a href="../index.html">Back to index</a>
-	</div> -->
 
 	<div id="container">
+
 		<header>
-			<div class="contain">
-				<h1>Site header goes here</h1>
-			</div>
+			<div class="site-logo-mod site-width">
+				<div class="site-logo logo-l">
+					<h2>
+						<a href="#">
+							<img src="http://mw.concord.org/nextgen/activities/_assets/img/mw-logo.png" alt="">
+						</a>
+					</h2>
+				</div> <!-- end site-logo -->
+
+				<div class="site-logo logo-r">
+					<h2>
+						<a href="#">
+							<img src="http://mw.concord.org/nextgen/activities/_assets/img/cc-logo.png?v=012013" alt="">
+						</a>
+					</h2>
+				</div> <!-- end site-logo -->
+
+			</div> <!-- end site-width -->
+
 		</header>
+
 
 		<div id="main" role="main">
 
 			<div class="activity-mod">
+
 <!-- Add class of fixed to activity-nav-mod for fixed nav -->
-				<div class="activity-nav-mod fixed">
+				<div class="activity-nav-mod">
 
-					<div class="contain">
-						<div class="activity-nav-logo">
-							logo
+					<div class="l-nav site-width">
+
+						<div class="activity-nav-logo ui-block-1">
+							<h3><a href="#"><img src="../_img/dummy_proj_logo.png"></a></h3>
 						</div>
-						<nav class="activity-nav">
-							<a class="prev">-</a>
+					
+						<nav class="paginas activity-nav ui-block-2">
 
-							<ul class="pagination">
-								<li class="pagination-item"><a href="" class="pagination-link">1</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">2</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">3</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">4</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">5</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">6</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">7</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">8</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">9</a></li>
-								<li class="pagination-item"><a href="" class="pagination-link">10</a></li>
-							</ul>
+							<a class="next">&raquo;</a>
+							<a class="prev">&laquo;</a>
+							
 
-							<a class="next">+</a>
-						</nav>
-					</div>
+							<div class="pages">
+								<ul class="pagination">
+									<li class="pagination-item"><a href="" class="pagination-link">1</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">2</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">3</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">4</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">5</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">6</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">7</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">8</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link">9</a></li>
+									<li class="pagination-item"><a href="" class="pagination-link selected">10</a></li>
+								</ul>
+							</div><!--pages-->
 
-				</div> <!-- end activity-nav -->
+							
+						</nav> <!-- end activity-nav -->
 
-				<div class="xxx contain">
+					</div><!-- end site-width -->
+				</div> <!-- end l-nav activity-nav-mod -->
+
+
+
+				<div class="xxx site-width">
 					
 					<div class="content-hdr">
 						<h2 class="h2">Intermolecular Attractions and Boiling Point</h2>
@@ -89,7 +113,7 @@
 						<p class="intro-txt">TK TK A long intro goes here with words TK. This is where the intro goes that can be very long or very short. It can have images or not. And all kinds of cool content and stuffs. K TK A long intro goes here with words TK. This is where the intro goes that can be very long or very short. It can have images or not. And all kinds of cool content and stuffs. K TK A long intro goes here with words TK. This is where the intro goes that can be very long or very short. It can have images or not. And all kinds of cool content and stuffs.</p>
 					</div> <!-- end mw-intro-block -->
 
-<!-- Change layout here. Add one of the following classes: l-full-width, l-60-40, l-70-30 -->
+<!-- Change layout here. Add one of the following classes: l-full-width, l-6040, l-7030 -->
 					<div class="content-mod l-7030">
 
 						<div class="interactive-mod">
@@ -103,6 +127,7 @@
 									<h5 class="h5">Question #1</h5>
 								</div>
 								<div class="question-bd">
+									<p class="question-txt">This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that.</p>
 									<p class="question-txt">This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that. This block will contain questions, text and stuff like that.</p>
 								</div>
 							</div> <!-- end question -->
@@ -118,10 +143,15 @@
 
 						</div> <!-- end questions-mod -->
 
+
+					</div> <!-- end content-mod -->
+
 <!-- Add expanded class to sidebar-mod for expanded view. -->
 						<div class="sidebar-mod">
-							<a href="#"><h5 class="h5">Did you know?</h5></a>
+							<a href="#">
+								<h5 class="h5">Did you know?</h5></a>
 							<div class="sidebar-bd">
+								<a class="sidebar-bd-close" href="#">X</a>
 								<p class="sidebar-txt">This is sidebar content right here with more words here and still more words explaining stuff right here. This is sidebar content right here with more words here and still more words explaining stuff right here. This is sidebar content right here with more words here and still more words explaining stuff right here.</p>
 							</div> <!-- end sidebar-bd -->
 
@@ -161,23 +191,33 @@
 							</div> <!-- end related-bd -->
 						</div> <!-- end related-mod -->
 
-					</div> <!-- end content-mod -->
-
 				</div> <!-- end xxx d -->
 
 			</div> <!-- end activity-mod -->
 
-		</div>
+			<div class="activity-footer-mod site-width">
+
+				<div class="site-logo logo-c">
+					<h2>
+						<a href="#">
+							<img src="http://mw.concord.org/nextgen/activities/_assets/img/cc-logo.png?v=012013" alt="">
+						</a>
+					</h2>
+				</div> <!-- end site-logo -->
+
+			</div> <!-- end activity-footer-mod -->
+
+		</div> <!-- end #main -->
 
 		<footer>
-			<div class="contain">
+			<div class="site-width">
 				<p class="footer-txt">Copyright © 2013 <a href="http://concord.org/">The Concord Consortium</a>. All rights reserved. This activity is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. The software is licensed under <a href="http://opensource.org/licenses/BSD-2-Clause">Simplified BSD</a>, <a href="http://opensource.org/licenses/MIT">MIT</a> or <a href="http://opensource.org/licenses/Apache-2.0">Apache 2.0</a> licenses. Please provide attribution to the Concord Consortium and the URL <a href="http://concord.org">http://concord.org</a>.</p>
 
 				<p class="footer-txt">This Next-Generation Molecular Workbench activity was developed with a grant from <a href="http://www.google.org/">Google.org</a>. The original <a href="http://mw.concord.org/modeler/">Classic Molecular Workbench</a> was supported by a series of grants from the <a href="http://nsf.gov/">National Science Foundation</a>.</p>
 
 				<p class="footer-txt">Need help? <a href="mailto:authoring-help@concord.org?subject=Authoring%20question">Send us an email</a>.</p>
 
-			</div>
+			</div> <!-- end site-width -->
 		</footer>
 
 	</div> <!-- eo #container -->
