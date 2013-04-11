@@ -525,7 +525,7 @@ footer {
 }
 .activity-nav .prev,
 .activity-nav .next {
-  background-color: #f3951d;
+  background-color: #83cddd;
   border: 1px solid #fff;
   -webkit-box-shadow: 0 1px 5px #ededed;
   -moz-box-shadow: 0 1px 5px #ededed;
@@ -535,7 +535,7 @@ footer {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   border-radius: 8px;
-  padding: 0 30px;
+  padding: 0 20px;
   line-height: 28px;
   text-align: center;
   margin-left: 13px;
@@ -547,12 +547,12 @@ footer {
 }
 .activity-nav .prev:hover,
 .activity-nav .next:hover {
-  background: #ffb833;
+  background-color: #ffb833;
+  background-color: #5bbdd3;
 }
 .activity-nav .prev:active,
 .activity-nav .next:active {
-  background: #6ac5d8;
-  background: black;
+  background-color: #309ab1;
 }
 .activity-nav .prev {
   float: right;

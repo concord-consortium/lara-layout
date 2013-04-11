@@ -167,23 +167,26 @@ footer {
   
   .prev,
   .next {
-    background-color: $drk-orange;
+    // background-color: $drk-orange;
+    background-color: lighten($med-blue, 5%);
     border: 1px solid #fff;
     @include box-shadow(0 1px 5px $black-10);
     @include border-radius(8px);
-    padding: 0 30px;
+    padding: 0 20px;
     line-height: 28px;
     text-align: center;
     margin-left: 13px;
     @include trans;
 
     &:hover {
-      background: lighten(#ffa600, 10%);
+      background-color: lighten(#ffa600, 10%);
+      background-color: darken($med-blue, 5%);
     }
     
     &:active {
-      background: #6ac5d8;
-      background: black;
+      // background: #6ac5d8;
+      // background: black;
+      background-color: darken($med-blue, 20%);
     }
 
   }
