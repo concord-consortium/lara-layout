@@ -747,36 +747,87 @@ footer {
 }
 
 .sidebar-mod {
-  width: 7%;
+  width: 9%;
   position: absolute;
   right: 0;
-  top: 75%;
-  background: #6fc5d8;
+  top: 55%;
+  font-family: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
+  background-color: #f3951d;
   text-align: center;
-  padding: 1em;
+  padding: 13px;
   -webkit-border-radius: 8px 0 0 8px;
   -moz-border-radius: 8px 0 0 8px;
   -ms-border-radius: 8px 0 0 8px;
   -o-border-radius: 8px 0 0 8px;
   border-radius: 8px 0 0 8px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.sidebar-mod:hover {
+  background-color: #f4a035;
 }
 .sidebar-mod .h5 {
   text-transform: uppercase;
   color: #fff;
   font-size: 19px;
+  line-height: 1.15em;
   font-weight: normal;
+  margin-top: 5px;
 }
 .sidebar-mod.expanded {
   text-align: left;
-  width: 60%;
-  background: #fff;
-  background: rgba(111, 197, 216, 0.9);
+  width: 75%;
+  background-color: #fff;
+  padding: 0;
+  border: 1px solid #ededed;
+  border-right: 0;
   -webkit-box-shadow: 0 5px 20px -3px #cccccc;
   -moz-box-shadow: 0 5px 20px -3px #cccccc;
   box-shadow: 0 5px 20px -3px #cccccc;
 }
+.sidebar-mod.expanded .sidebar-hdr {
+  padding: 16px 32px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.sidebar-mod.expanded .sidebar-hdr .sidebar-hdr-img {
+  display: none;
+}
+.sidebar-mod.expanded h5 {
+  color: #f3951d;
+}
 .sidebar-mod.expanded .sidebar-bd {
   display: block;
+  padding: 16px 32px 32px;
+  margin-top: 32px;
+  margin-right: 60px;
+  font-size: 16px;
+  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+}
+.sidebar-mod.expanded .sidebar-bd-close {
+  position: absolute;
+  background-color: #cccccc;
+  padding: 2px 6px;
+  top: 16px;
+  right: 32px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.sidebar-mod.expanded .sidebar-bd-close:hover {
+  background-color: #a6a6a6;
 }
 
 .sidebar-bd {
