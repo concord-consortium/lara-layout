@@ -27,12 +27,13 @@
 }
 
 .drk-text-shadow {
-  text-shadow: 0 -1px 0 darken($med-blue, 25%);
+  // text-shadow: 0 -1px 0 darken($med-blue, 25%);
+  @include text-shadow(0 -1px 0 darken($med-blue, 20%));
 }
 
 
 .mod-border-rounded {
-  border: 1px solid $black-15;
+  border: 1px solid $black-10;
   @include border-radius(0 0 13px 13px);
 }
 
@@ -455,19 +456,20 @@ footer {
 // --------------------------------
 .related-mod {
   margin-bottom: 48px;
-  @extend .mod-border-rounded;
   border-top: none;
+  @extend .mod-border-rounded;
   @include pie-clearfix;
 }
 
 
 .related-hdr {
-  background: $med-blue;
-  padding: 8px 13px;
+  background-color: $med-blue;
   color: #fff;
+  font-size: 18px;
+  padding: 6px 13px;
   margin-bottom: 8px;
   @include box-shadow(0 2px 5px -1px $black-15);
-  font-size: 20px;
+  @extend .drk-text-shadow; 
 }
 
 .related-bd {
@@ -489,31 +491,37 @@ footer {
   }
 
   .h6 {
-    font-size: 19px;
-    margin-bottom: 6px;
+    font-size: 16px;
+    margin-bottom: 3px;
     color: #000;
   }
 
   .related-item-txt {
-    font-size: 1.25em;
+    font-size: 14px;
+    line-height: 1.35em;
 
     a {
       display: block;
-      padding: 6px;
-      background: #e9e9e9;
+      padding: 5px 6px;
+      background-color: $black-10;
+      color: darken($med-blue, 5%);
+      @include text-shadow(0 1px 0 lighten($black-10, 3%));
       width: 40%;
-      border-radius: 3px;
+      @include border-radius(3px);
       margin-top: 20px;
       text-align: center;
+      @include trans;
 
       &:hover {
-        background: darken(#e9e9e9, 8%);
+        background-color: darken($black-10, 3%);
+        color: darken($med-blue, 18%);
       }
 
     }
   }
 
 }
+
 
 .related-img {
   margin-bottom: 13px;
