@@ -38,35 +38,25 @@ $mono:"Courier New",Courier,mono;
 
 // Variables for Molecular Workbench
 // These are imported into screen.scss
+// ----------------------------------------
 
 
 // font variables
+// ----------------------------------------
 $lato-reg: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
-
 $lato-bold: Lato-Bold, Helvetica, Arial, Verdana, sans-serif;
-
 $lato-light: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
 
 
 
 // color
-
-$mw-header: #bddfdf;
-
-$mw-header-text: darken(#bddfdf, 40%);
-
-$mw-question-header: #6cc4d8;
-
-// $mw-subhead-color: #3a878b;
-$mw-subhead-color: #6fc5d8; // (111, 197, 216)
-
-$mw-xxx-color: #3a878b;
-
-// #6fc5d8
+// ----------------------------------------
 
 
 
+$drk-orange: #f3951d; 	// (243, 149, 29)
+
+$lt-blue: #bddfdf;	 	// (189, 223, 223)
+$med-blue: #6fc5d8; 	// (111, 197, 216)
 
 
-
-$mw-headline-color: #eb8723;
