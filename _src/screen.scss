@@ -175,7 +175,7 @@ footer {
     padding: 0 20px;
     line-height: 28px;
     text-align: center;
-    margin-left: 13px;
+    margin-left: 8px;
     @include trans;
 
     &:hover {
@@ -411,8 +411,171 @@ footer {
 }
 
 .question-txt {
-  font-size: 1.25em;
+  // font-size: 1.25em;
 }
+
+
+// Styling elements within .question-bd
+// --------------------------------
+
+.question-bd {
+  font-size: 16px;
+  line-height: 1.35em;
+  ol, 
+  ul, 
+  dl,
+  blockquote, 
+  p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+
+// ordered lists
+.question-bd {
+  ol {
+    // margin: 26px;
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    padding: 0;
+    margin: 16px 0;
+
+    ol, ul {
+      margin: 16px 0 16px 48px;
+    }
+
+    > li {
+      margin-bottom: 13px;
+      position: relative;
+      &:before {
+        content:counter(li)".";
+        counter-increment:li;
+        margin-right: 8px;
+        font-weight: bold;
+        font-size: 0.65em;
+        padding: 3px 5px;
+        background-color: $black-5;
+        position: relative;
+        top: -2px;
+        @include border-radius(2px);
+      }
+    }
+  }
+}
+
+// unordered lists
+.question-bd {
+  ul {
+    list-style: square;
+    margin-left: 16px;
+
+    ul, ol {
+      margin: 16px 0 16px 48px;
+    }
+
+    li {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+//definition lists
+.question-bd {
+  dl {
+
+  }
+  dt {
+    font-weight: bold;
+    margin-top: 13px;
+  }
+  dd {
+    margin-left: 16px;
+  }
+}
+
+
+// text areas
+.question-bd {
+  form {
+  }
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid $black-15;
+    @include border-radius(8px);
+  }
+
+  em {
+    display: block;
+    font-size: 0.75em;
+    text-align: right;
+    color: $black-15;
+  }
+}
+
+
+// radio buttons
+.question-bd {
+  label {
+    margin-bottom: 13px;
+  }
+  input {
+    margin-right: 8px;
+  }
+}
+
+
+
+
+// submit
+input[type="submit"], 
+button[type="submit"] {
+  border: 0;
+  padding: 12px 24px;
+  background-color: $drk-orange;
+  @include border-radius(8px);
+  color: #fff;
+  @include trans;
+  cursor: pointer;
+  @include text-shadow(0 -1px 0 darken($drk-orange, 20%));
+  &:hover {
+    background-color: lighten($drk-orange, 8%);
+  }
+
+}
+
+
+// button
+input[type="button"],
+button[type="button"] {
+  border: 0;
+  @include border-radius(8px);
+  color: $black-75;
+  font-size: 13px;
+  padding: 8px 12px;
+  background-color: lighten($black-15, 5%);
+  margin-top: 13px;
+  @include trans;
+  cursor: pointer;
+  @include text-shadow(0 1px 0 $black-10);
+  &:hover {
+    background-color: lighten($black-15, 10%);
+  }
+
+}
+
+
+
+
+
+
 
 
 // Sidebar
