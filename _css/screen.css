@@ -465,7 +465,7 @@ footer {
   -webkit-box-shadow: 0 4px 8px rgba(204, 204, 204, 0.3);
   -moz-box-shadow: 0 4px 8px rgba(204, 204, 204, 0.3);
   box-shadow: 0 4px 8px rgba(204, 204, 204, 0.3);
-  padding: 13px;
+  padding: 6px;
   z-index: 1;
 }
 
@@ -500,7 +500,7 @@ footer {
 }
 
 .activity-nav {
-  margin-top: 5px;
+  margin-top: 8px;
   position: relative;
   *zoom: 1;
 }
@@ -511,14 +511,18 @@ footer {
 }
 .activity-nav .prev,
 .activity-nav .next {
-  background: #bbdfdf;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 26px;
-  padding: 1px 0 3px;
+  background-color: #ffa600;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 1px 5px #ededed;
+  -moz-box-shadow: 0 1px 5px #ededed;
+  box-shadow: 0 1px 5px #ededed;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0 30px;
+  line-height: 28px;
   text-align: center;
   margin-left: 13px;
   -webkit-transition: all 0.2s ease-in;
@@ -529,29 +533,27 @@ footer {
 }
 .activity-nav .prev:hover,
 .activity-nav .next:hover {
-  background: #98cfcf;
+  background: #ffb833;
 }
 .activity-nav .prev:active,
 .activity-nav .next:active {
   background: #6ac5d8;
+  background: black;
 }
 .activity-nav .prev {
   float: right;
-  width: 5%;
 }
 .activity-nav .next {
   float: right;
-  width: 5%;
 }
 .activity-nav .pages {
   float: right;
-  margin-top: 3px;
-  margin-right: 13px;
 }
 
 .pagination {
   *zoom: 1;
   text-align: center;
+  margin-right: 13px;
 }
 .pagination:after {
   content: "";
@@ -573,14 +575,16 @@ footer {
   margin-left: 0;
 }
 .pagination-item .pagination-link {
-  background: #f2f2f2;
+  background: #d7eff5;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
-  color: #bfbfbf;
-  padding: 8px 13px;
+  color: #6ac5d8;
+  text-shadow: 0 1px 0 #fff;
+  border: 1px solid #b4e2ed;
+  padding: 5px 9px;
   display: block;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -589,12 +593,13 @@ footer {
   transition: all 0.2s ease-in;
 }
 .pagination-item .pagination-link:hover {
-  background: #98cfcf;
+  background: #7ecddd;
   color: #fff;
 }
 .pagination-item .pagination-link.selected {
-  background: #42b5cd;
+  background: #39b2cb;
   color: #fff;
+  border: 1px solid #42b5cd;
 }
 
 .l-6040 {
@@ -710,7 +715,6 @@ footer {
   background: #6cc4d8;
   position: relative;
   padding: 11px;
-  margin: 0 0 13px;
 }
 .question-hdr .h5 {
   position: relative;

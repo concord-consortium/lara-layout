@@ -125,7 +125,7 @@ footer {
     top: 0;
     background: #fff;
     @include box-shadow(0 4px 8px rgba($black-15, 0.3) );
-    padding: 13px;
+    padding: 6px;
     z-index: 1;
   }
 }
@@ -146,46 +146,53 @@ footer {
 
 .activity-nav {
   // margin: 5px auto 0;
-  margin-top: 5px;
+  margin-top: 8px;
   position: relative;
   @include pie-clearfix;
   
   .prev,
   .next {
-    background: #bbdfdf;
-    @include border-radius(50%);
-    font-size: 26px;
-    padding: 1px 0 3px;
+    // background: #bbdfdf;
+    background-color: #ffa600;
+    border: 1px solid #fff;
+    @include box-shadow(0 1px 5px $black-10);
+    // @include border-radius(50%);
+    @include border-radius(8px);
+    // font-size: 26px;
+    padding: 0 30px;
+    line-height: 28px;
     text-align: center;
     margin-left: 13px;
     @include trans;
 
     &:hover {
-      background: darken(#bbdfdf, 10%);
+      // background: darken(#bbdfdf, 10%);
+      background: lighten(#ffa600, 10%);
     }
     
     &:active {
       background: #6ac5d8;
+      background: black;
     }
 
   }
 
   .prev {
     float: right;
-    width: 5%;
+    // width: 5%;
   }
 
   .next {
     float: right;
-    width: 5%;
+    // width: 5%;
   }
 
   .pages {
     // width: 90%;
     // float: left;
     float: right;
-    margin-top: 3px;
-    margin-right: 13px;
+    // margin-top:1 3px;
+    // margin-right: 13px;
   }
 
 }
@@ -194,6 +201,7 @@ footer {
   @include pie-clearfix;
   // width: auto;
   text-align: center;
+  margin-right: 13px;
   // border: 1px solid pink;
 }
 
@@ -214,24 +222,31 @@ footer {
 
   .pagination-link {
     // background: #bbdfdf;
-    background: lighten($black-10, 2%);
+    // background: lighten($black-10, 2%);
+    background: lighten(#6ac5d8, 27%);
     // border-radius: 0.25em;
     @include border-radius(6px);
     // color: #fff;
-    color: darken($black-15, 5%);
-    padding: 8px 13px;
+    // color: darken($black-15, 5%);
+    color: #6ac5d8;
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid lighten(#6ac5db, 18%);
+    // padding: 8px 13px;
+    padding: 5px 9px;
     display: block;
     @include trans;
 
 
     &:hover {
-      background: darken(#bbdfdf, 10%);
+      // background: darken(#bbdfdf, 10%);
+      background: lighten(#6ac5d8, 5%);
       color: #fff;
     }
 
     &.selected {
-      background: darken(#6ac5d8, 10%);
+      background: darken(#6ac5d8, 12%);
       color: #fff;
+      border: 1px solid darken(#6ac5d8, 10%);
     }
 
   }
@@ -381,7 +396,7 @@ footer {
   background: $mw-question-header;
   position: relative;
   padding: 11px;
-  margin: 0 0 13px;
+  // margin: 0 0 13px;
 
   .h5 {
     position: relative;
