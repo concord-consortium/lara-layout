@@ -142,6 +142,11 @@ footer {
     @include box-shadow(0 4px 8px rgba($black-15, 0.3) );
     padding: 6px;
     z-index: 1;
+    .activity-nav-logo {
+      h3 {
+        text-indent: 0;
+      }
+    }
   }
 }
 
@@ -151,12 +156,15 @@ footer {
   img {
     max-width: 100%;
   }
+   h3 {
+        text-indent: -9999em;
+      }
 }
 
 
 
 .l-nav {
-    @include ui-grid-2(20%,80%,10%);
+    @include ui-grid-2(18%,80%,10%);
 }
 
 .activity-nav {
@@ -302,6 +310,15 @@ footer {
     float: right;
   }
 
+  .interactive-hdr {
+    .h5 {
+      &:after {
+        border-left-color: $black-15;
+      }
+    }
+  }
+
+
   .h5 {
     &:after {
         position: absolute;
@@ -393,6 +410,9 @@ footer {
   background: $med-blue;
   position: relative;
   padding: 11px;
+  &.interactive-hdr {
+    background: $black-15;
+  }
 
   .h5 {
     position: relative;
@@ -433,7 +453,8 @@ footer {
 
 
 // ordered lists
-.question-bd {
+.question-bd,
+.intro-mod {
   ol {
     // margin: 26px;
     counter-reset: li;
@@ -443,7 +464,7 @@ footer {
     margin: 16px 0;
 
     ol, ul {
-      margin: 16px 0 16px 48px;
+      margin: 16px 0 16px 16px;
     }
 
     > li {
@@ -472,7 +493,7 @@ footer {
     margin-left: 16px;
 
     ul, ol {
-      margin: 16px 0 16px 48px;
+      margin: 16px 0 16px 16px;
     }
 
     li {

@@ -482,12 +482,18 @@ footer {
   padding: 6px;
   z-index: 1;
 }
+.activity-nav-mod.fixed .activity-nav-logo h3 {
+  text-indent: 0;
+}
 
 .activity-nav-logo {
   float: left;
 }
 .activity-nav-logo img {
   max-width: 100%;
+}
+.activity-nav-logo h3 {
+  text-indent: -9999em;
 }
 
 .l-nav {
@@ -500,7 +506,7 @@ footer {
 }
 .l-nav > .ui-block-1,
 .l-nav > .ui-block.first {
-  width: 15%;
+  width: 13%;
   display: inline;
   float: left;
   margin-right: 10%;
@@ -658,6 +664,9 @@ footer {
   width: 70%;
   float: right;
 }
+.l-full-width .interactive-hdr .h5:after {
+  border-left-color: #cccccc;
+}
 .l-full-width .h5:after {
   position: absolute;
   content: "\0020";
@@ -731,6 +740,9 @@ footer {
   position: relative;
   padding: 11px;
 }
+.question-hdr.interactive-hdr {
+  background: #cccccc;
+}
 .question-hdr .h5 {
   position: relative;
   color: #fff;
@@ -755,21 +767,26 @@ footer {
   margin-bottom: 16px;
 }
 
-.question-bd ol {
+.question-bd ol,
+.intro-mod ol {
   counter-reset: li;
   list-style: none;
   *list-style: decimal;
   padding: 0;
   margin: 16px 0;
 }
-.question-bd ol ol, .question-bd ol ul {
-  margin: 16px 0 16px 48px;
+.question-bd ol ol, .question-bd ol ul,
+.intro-mod ol ol,
+.intro-mod ol ul {
+  margin: 16px 0 16px 16px;
 }
-.question-bd ol > li {
+.question-bd ol > li,
+.intro-mod ol > li {
   margin-bottom: 13px;
   position: relative;
 }
-.question-bd ol > li:before {
+.question-bd ol > li:before,
+.intro-mod ol > li:before {
   content: counter(li) ".";
   counter-increment: li;
   margin-right: 8px;
@@ -791,7 +808,7 @@ footer {
   margin-left: 16px;
 }
 .question-bd ul ul, .question-bd ul ol {
-  margin: 16px 0 16px 48px;
+  margin: 16px 0 16px 16px;
 }
 .question-bd ul li {
   margin-bottom: 13px;
