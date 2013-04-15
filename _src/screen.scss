@@ -104,7 +104,8 @@ footer {
 	margin: 0 0 26px;
 	// padding: 26px;
 	// background-color: $lt-blue;
-  @extend .header-gradient;
+  // @extend .header-gradient;
+  background-color: #e5e5e5;
 	color: white;
 }
 
@@ -689,66 +690,77 @@ button[type="button"] {
 // Sidebar
 // --------------------------------
 .sidebar-mod {
-  width: 9%;
-  max-width: 85px;
+  // width: 9%;
+  // max-width: 85px;
   position: absolute;
   right: 0;
   top: 55%;
   font-family: $lato-light;
   // background-color: $med-blue;
-  background-color: $drk-orange;
+  
   text-align: center;
   padding: 13px;
-  @include border-radius(8px 0 0 8px);
+  // @include border-radius(8px 0 0 8px);
   @include trans;
+  z-index: 1;
+
+
+
+
+.sidebar-hdr {
+  background-color: $drk-orange;
+  position: absolute;
+  right: 0;
+  padding: 13px;
+  // width: 9%;
+  max-width: 85px;
 
   &:hover {
     background-color: lighten($drk-orange, 5%);
   }
 
+}
 
   .h5 {
     text-transform: uppercase;
     color: #fff;
-    font-size: 16px; 
+    font-size: 14px; 
     line-height: 1em;
-    font-weight: normal;
-    margin-top: 5px;
+    font-weight: bold;
+    margin-top: 7px;
   }
 
+  .sidebar-hdr-img {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      max-width: 100%;
+    }
+  }
+
+
+
+// sidebar expanded
   &.expanded {
     text-align: left;
     width: 75%;
     max-width: 75%;
-    background-color: #fff;
+    // background-color: #fff;
     padding: 0;
-    border: 1px solid $black-10;
+    // border: 1px solid $black-10;
     border-right: 0;
     @include box-shadow(0 5px 20px -3px $black-15);
 
 
-    .sidebar-hdr {
-      padding: 16px 32px;
-      position: absolute;
-      top: 0;
-      width: 100%;
-
-      .sidebar-hdr-img {
-        display: none;
-      }
-
-    }
-    h5 {
-      color: $drk-orange;  
-    }
-
     .sidebar-bd {
       display: block;
       padding: 16px 32px 32px;
-      margin-top: 32px;
-      margin-right: 60px;
+      // margin-top: 32px;
+      // margin-right: 60px;
       font-size: 16px;
       font-family: $lato-reg;
+      background-color: #fff;
+      position: static;
     }
 
     .sidebar-bd-close {
@@ -760,16 +772,30 @@ button[type="button"] {
       color: #fff;
       @include border-radius(5px);
       @include trans;
+
       &:hover {
         background-color: darken($black-15, 15%);
+      }
+
+    }
+
+    .sidebar-hdr {
+      position: absolute;
+      left: -85px;
+      width: 85px;
+
+      h5 {
+        display: none;
       }
     }
 
   }
+
 }
 
 .sidebar-bd {
-  display: none;
+  position: absolute;
+  right: 8000px;
 }
 
 
