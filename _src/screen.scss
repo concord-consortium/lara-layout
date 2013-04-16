@@ -16,19 +16,12 @@
 
 
 
+.big-spacer { width: 100%; height: 36px; margin: 90px 0; background-color: #e5e5e5; }
 
 
 // *********************************************
 // Molecular Workbench Helpers
 // *********************************************
-
-// .lt-text-shadow {
-//   text-shadow: 0 1px 0 lighten($lt-blue, 10%);
-// }
-
-// .drk-text-shadow {
-//   @include text-shadow(0 -1px 0 darken($med-blue, 20%));
-// }
 
 
 @mixin drk-txt-shadow($color: $black-50) {
@@ -549,6 +542,7 @@ footer {
   }
 }
 
+
 // unordered lists
 .intro-mod,
 .content-mod {
@@ -565,6 +559,7 @@ footer {
     }
   }
 }
+
 
 //definition lists
 .intro-mod,
@@ -624,7 +619,6 @@ footer {
 
 // submit
 
-
 input[type="submit"], 
 button[type="submit"] {
   display: block;
@@ -655,29 +649,6 @@ input[type="button"],
 button[type="button"] {
   border: 0;
   @include btn;
-  // @include border-radius(4px);
-  // color: $black-75;
-  // color: #fff;
-  // font-size: 13px;
-  // padding: 9px 13px;
-  // background-color: lighten($black-15, 10%);
-  // border: 1px solid lighten($black-15, 3%);
-  // @include lt-txt-shadow(#fff);
-  // color: darken($black-15, 25%);
-  // color: darken($med-blue, 15%);
-  // background-color: lighten($med-blue, 15%);
-  // @include drk-txt-shadow(darken($med-blue, 3%));
-  // border: 1px solid lighten($med-blue, 2%);
-  // margin-top: 13px;
-  // @include trans;
-  // cursor: pointer;
-  // @include text-shadow(0 1px 0 $black-10);
-  // text-transform: uppercase;
-  // &:hover {
-    // background-color: lighten($black-15, 7%);
-    // background-color: lighten($med-blue, 5%);
-  // }
-
 }
 
 
@@ -690,51 +661,65 @@ button[type="button"] {
 // Sidebar
 // --------------------------------
 .sidebar-mod {
-  // width: 9%;
-  // max-width: 85px;
   position: absolute;
   right: 0;
-  top: 55%;
+  top: 35%;
   font-family: $lato-light;
-  // background-color: $med-blue;
-  
   text-align: center;
   padding: 13px;
-  // @include border-radius(8px 0 0 8px);
   @include trans;
   z-index: 1;
 
 
-
-
-.sidebar-hdr {
-  background-color: $drk-orange;
-  position: absolute;
-  right: 0;
-  padding: 13px;
-  // width: 9%;
-  max-width: 85px;
-
-  &:hover {
+  .sidebar-hdr {
     background-color: lighten($drk-orange, 5%);
-  }
+    position: absolute;
+    right: 0;
+    padding: 13px;
+    max-width: 85px;
+    border-right: 4px solid $drk-orange;
+    @include border-radius(3px 0 0 3px);
+    // @include trans;
+    z-index: 1;
 
-}
+    &:hover {
+      background-color: darken($drk-orange, 5%);
+    }
+
+  }
 
   .h5 {
     text-transform: uppercase;
     color: #fff;
     font-size: 14px; 
-    line-height: 1em;
-    font-weight: bold;
+    line-height: 1.05em;
     margin-top: 7px;
+    @include drk-txt-shadow($drk-orange);
   }
 
   .sidebar-hdr-img {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+
     img {
       max-width: 100%;
+    }
+  }
+
+  .sidebar-bd {
+    position: absolute;
+    right: 8000px;
+    padding: 60px;
+    font-size: 16px;
+    font-family: $lato-reg;
+    background-color: #fff;
+    @include border-radius(0 0 0 6px);
+
+    .h4 {
+      font-size: 24px;
+      font-family: $lato-reg;
+      font-weight: 400;
+      margin-bottom: 14px;
     }
   }
 
@@ -745,22 +730,23 @@ button[type="button"] {
     text-align: left;
     width: 75%;
     max-width: 75%;
-    // background-color: #fff;
     padding: 0;
-    // border: 1px solid $black-10;
     border-right: 0;
-    @include box-shadow(0 5px 20px -3px $black-15);
+    @include box-shadow(0 0px 24px $black-15);
 
 
     .sidebar-bd {
-      display: block;
-      padding: 16px 32px 32px;
-      // margin-top: 32px;
-      // margin-right: 60px;
-      font-size: 16px;
-      font-family: $lato-reg;
-      background-color: #fff;
       position: static;
+
+      .sidebar-txt {
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }
+
     }
 
     .sidebar-bd-close {
@@ -789,14 +775,11 @@ button[type="button"] {
       }
     }
 
-  }
+  } // end .expanded
 
-}
+} // end sidebar-mod
 
-.sidebar-bd {
-  position: absolute;
-  right: 8000px;
-}
+
 
 
 
@@ -851,26 +834,11 @@ button[type="button"] {
     line-height: 1.35em;
 
     a {
-      // display: block;
-      // padding: 5px 6px;
-      // background-color: $black-10;
-      // color: darken($med-blue, 8%);
-      // @include lt-txt-shadow($black-10);
-      // width: 50%;
-      // @include border-radius(3px);
-      // margin-top: 20px;
-      // text-align: center;
-      // @include trans;
       @include btn;
       display: inline-block;
       padding: 7px 13px;
-
-      // &:hover {
-      //   background-color: darken($black-10, 3%);
-      //   color: darken($med-blue, 18%);
-      // }
-
     }
+
   }
 
 }
@@ -885,6 +853,53 @@ button[type="button"] {
   }
 
 }
+
+
+
+// Image types
+// --------------------------------
+
+.content-img {
+  img {
+    max-width: 100%;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #e9e9e9;
+  }
+
+  figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+
+
+.img-reg { max-width: 60%; }
+
+.img-inset { 
+  max-width: 30%; 
+  float: right;
+  margin-left: 2em;
+}
+
+.question-bd {
+
+  .content-img {
+    img {
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  .img-reg {
+    max-width: 100%;
+  }
+
+}
+
+
 
 
 // Activity footer
