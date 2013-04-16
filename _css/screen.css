@@ -969,6 +969,7 @@ button[type="button"]:active {
   position: absolute;
   right: 8000px;
   padding: 60px;
+  height: auto;
   font-size: 16px;
   font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
   background-color: #fff;
@@ -990,9 +991,9 @@ button[type="button"]:active {
   max-width: 75%;
   padding: 0;
   border-right: 0;
-  -webkit-box-shadow: 0 0px 24px #cccccc;
-  -moz-box-shadow: 0 0px 24px #cccccc;
-  box-shadow: 0 0px 24px #cccccc;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.6), 0 0 0 4000px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.35s position, 0.35s 0.05s box-shadow;
+  transition: 0.35s position, 0.35s 0.05s box-shadow;
 }
 .sidebar-mod.expanded .sidebar-bd {
   position: static;
@@ -1030,7 +1031,7 @@ button[type="button"]:active {
   width: 85px;
 }
 .sidebar-mod.expanded .sidebar-hdr h5 {
-  display: none;
+  text-align: center;
 }
 
 .related-mod {

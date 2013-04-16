@@ -710,6 +710,7 @@ button[type="button"] {
     position: absolute;
     right: 8000px;
     padding: 60px;
+    height: auto;
     font-size: 16px;
     font-family: $lato-reg;
     background-color: #fff;
@@ -732,7 +733,16 @@ button[type="button"] {
     max-width: 75%;
     padding: 0;
     border-right: 0;
-    @include box-shadow(0 0px 24px $black-15);
+    // @include box-shadow(0 0px 24px $black-15);
+
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.6),
+                0 0 0 4000px rgba(0, 0, 0, 0.6);
+        -webkit-transition: 0.35s position, 
+                  // 1s margin-left,
+                  // 0.25s position,
+                  0.35s 0.05s box-shadow;
+        transition: 0.35s position,
+                    0.35s 0.05s box-shadow;
 
 
     .sidebar-bd {
@@ -771,7 +781,8 @@ button[type="button"] {
       width: 85px;
 
       h5 {
-        display: none;
+        // display: none;
+        text-align: center;
       }
     }
 
