@@ -1169,6 +1169,27 @@ footer .footer-txt a:hover {
   color: #2b5959;
 }
 
+.index-mod {
+  text-align: center;
+}
+.index-mod .content-hdr .h2 {
+  font-size: 48px;
+}
+.index-mod .intro-mod {
+  margin-bottom: 60px;
+}
+.index-mod .intro-mod .intro-txt {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 1.35em;
+}
+.index-mod input[type="submit"],
+.index-mod button[type="submit"] {
+  font-size: 20px;
+  padding: 20px 86px;
+  margin-bottom: 24px;
+}
+
 /* ============================================= */
 /*	Print Styles							     
 	Inline to avoid required HTTP connection     */

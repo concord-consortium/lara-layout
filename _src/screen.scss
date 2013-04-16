@@ -4,7 +4,7 @@
 /* ## Base CSS */
 // @import "project/type";
 // @import "project/forms";
-// @import "project/tables";
+// @import "project/tables";     
 // @import "project/lists";
 
 /* ## Components */
@@ -948,7 +948,48 @@ footer {
 
 
 
+// Fix footer to bottom of page
+// --------------------------------
+// body { height: 100%; }
+// html { height: 100%; }
+// #container { min-height: 100%; height: 100%; position: relative; }
+// footer { position: absolute; bottom: 0; width: 100%; }
 
+
+// Index page
+// --------------------------------
+
+.index-mod {
+  text-align: center;
+
+  .content-hdr {
+
+    .h2 {
+      font-size: 48px;
+    }
+
+  }
+
+  .intro-mod {
+    margin-bottom: 60px;
+
+    .intro-txt {
+      margin: 0 auto;
+      font-size: 24px;
+      line-height: 1.35em;
+    }
+
+
+  } // end intro-mod
+
+  input[type="submit"], 
+  button[type="submit"] {
+    font-size: 20px;
+    padding: 20px 86px;
+    margin-bottom: 24px;
+  }
+
+} // end index-mod
 
 
 /* ============================================= */
