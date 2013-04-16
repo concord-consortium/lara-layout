@@ -170,7 +170,7 @@ footer {
     position: fixed;
     top: 0;
     background: #fff;
-    @include box-shadow(0 4px 8px rgba($black-15, 0.3) );
+    @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
     padding: 6px;
     z-index: 1;
     .activity-nav-logo {
