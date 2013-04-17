@@ -527,24 +527,30 @@ footer {
 .activity-nav .prev,
 .activity-nav .next {
   background-color: #83cddd;
-  border: 1px solid #fff;
-  -webkit-box-shadow: 0 1px 5px #ededed;
-  -moz-box-shadow: 0 1px 5px #ededed;
-  box-shadow: 0 1px 5px #ededed;
+  border: 1px solid #6fc5d8;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  padding: 0 14px;
-  line-height: 21px;
+  line-height: 22px;
   text-align: center;
   margin-left: 8px;
+  width: 40px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+}
+.activity-nav .prev .prev-next-img,
+.activity-nav .next .prev-next-img {
+  width: 40%;
+  margin: 0 auto;
+}
+.activity-nav .prev .prev-next-img img,
+.activity-nav .next .prev-next-img img {
+  max-width: 100%;
 }
 .activity-nav .prev:hover,
 .activity-nav .next:hover {
@@ -567,7 +573,7 @@ footer {
 
 .pagination {
   text-align: center;
-  margin-right: 13px;
+  margin-right: 8px;
 }
 
 .pagination-item {
@@ -655,7 +661,7 @@ footer {
 
 .content-hdr {
   font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 .content-hdr .h2 {
   font-family: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
@@ -663,7 +669,6 @@ footer {
   font-weight: 100;
   letter-spacing: -1px;
   color: #f3951d;
-  margin-bottom: 36px;
 }
 
 .intro-mod {
