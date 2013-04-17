@@ -205,7 +205,7 @@ footer {
 // --------------------------------
 
 .activity-nav-mod {
-  margin: 0 0 80px;
+  margin: 0 0 40px;
   position: relative;
   width: 100%;
   color: #fff;
@@ -216,11 +216,11 @@ footer {
     top: 0;
     background: #fff;
     @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
-    padding: 6px;
+    padding: 10px 6px;
     z-index: 9999;
     .activity-nav-logo {
-      h3 {
-        text-indent: 0;
+      .h2 {
+        visibility: visible;
       }
     }
   }
@@ -232,15 +232,24 @@ footer {
   img {
     max-width: 100%;
   }
-   h3 {
-        text-indent: -9999em;
-      }
+   // h3 {
+   //      text-indent: -9999em;
+   //    }
+   .h2 {
+    font-family: $lato-reg;
+    font-size: 18px;
+    font-weight: normal;
+    color: $drk-orange;
+    visibility: hidden;
+    line-height: 36px;
+   }
 }
 
 
 
 .l-nav {
-    @include ui-grid-2(18%,80%,10%);
+    // @include ui-grid-2(18%,80%,10%);
+    @include ui-grid-2(50%, 50%, 5%);
 }
 
 .activity-nav {
@@ -255,9 +264,11 @@ footer {
     background-color: lighten($med-blue, 5%);
     border: 1px solid #fff;
     @include box-shadow(0 1px 5px $black-10);
-    @include border-radius(8px);
-    padding: 0 20px;
-    line-height: 28px;
+    @include border-radius(3px);
+    // padding: 0 20px;
+    padding: 0 14px;
+    // line-height: 28px;
+    line-height: 21px;
     text-align: center;
     margin-left: 8px;
     @include trans;
@@ -315,7 +326,8 @@ footer {
     // text-shadow: 0 1px 0 #fff;
     @include lt-txt-shadow(#fff);
     border: 1px solid lighten($med-blue, 18%);
-    padding: 5px 9px;
+    // padding: 5px 9px;
+    padding: 3px 5px;
     display: block;
     @include trans;
 
