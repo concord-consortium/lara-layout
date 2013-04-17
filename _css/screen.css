@@ -870,7 +870,7 @@ button[type="submit"] {
   background-image: -webkit-linear-gradient(top, #f7b766, #f3951d);
   background-image: linear-gradient(top, #f7b766, #f3951d);
   -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
-  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -910,18 +910,18 @@ button[type="button"] {
   border: 0;
   font-size: 13px;
   padding: 9px 13px;
-  background: #e6e6e6;
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #d9d9d9);
-  background-image: linear-gradient(top, #e6e6e6, #d9d9d9);
+  background: #abe1ed;
+  background-image: -webkit-linear-gradient(top, #abe1ed, #65d2eb);
+  background-image: linear-gradient(top, #abe1ed, #65d2eb);
   -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
-  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 -1px 0 #a6a6a6;
-  border: 1px solid #d9d9d9;
+  text-shadow: 0 -1px 0 #42bcd7;
+  border: 1px solid #65d2eb;
   margin-top: 13px;
   cursor: pointer;
   text-transform: uppercase;
@@ -935,14 +935,14 @@ button[type="button"] {
 }
 input[type="button"]:hover,
 button[type="button"]:hover {
-  background-image: -webkit-linear-gradient(top, #d9d9d9, #bfbfbf);
-  background-image: linear-gradient(top, #d9d9d9, #bfbfbf);
+  background-image: -webkit-linear-gradient(top, #96dae9, #38c5e5);
+  background-image: linear-gradient(top, #96dae9, #38c5e5);
 }
 input[type="button"]:active,
 button[type="button"]:active {
-  text-shadow: 0 -1px 0 #a6a6a6;
-  background-image: -webkit-linear-gradient(top, #cccccc, #cccccc);
-  background-image: linear-gradient(top, #cccccc, #cccccc);
+  text-shadow: 0 -1px 0 #42bcd7;
+  background-image: -webkit-linear-gradient(top, #81d3e5, #4fcce8);
+  background-image: linear-gradient(top, #81d3e5, #4fcce8);
 }
 
 .sidebar-mod {
@@ -1101,18 +1101,18 @@ button[type="button"]:active {
 .related-item .related-item-txt a {
   font-size: 13px;
   padding: 9px 13px;
-  background: #e6e6e6;
-  background-image: -webkit-linear-gradient(top, #e6e6e6, #d9d9d9);
-  background-image: linear-gradient(top, #e6e6e6, #d9d9d9);
+  background: #abe1ed;
+  background-image: -webkit-linear-gradient(top, #abe1ed, #65d2eb);
+  background-image: linear-gradient(top, #abe1ed, #65d2eb);
   -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
-  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 -1px 0 #a6a6a6;
-  border: 1px solid #d9d9d9;
+  text-shadow: 0 -1px 0 #42bcd7;
+  border: 1px solid #65d2eb;
   margin-top: 13px;
   cursor: pointer;
   text-transform: uppercase;
@@ -1127,13 +1127,13 @@ button[type="button"]:active {
   padding: 7px 13px;
 }
 .related-item .related-item-txt a:hover {
-  background-image: -webkit-linear-gradient(top, #d9d9d9, #bfbfbf);
-  background-image: linear-gradient(top, #d9d9d9, #bfbfbf);
+  background-image: -webkit-linear-gradient(top, #96dae9, #38c5e5);
+  background-image: linear-gradient(top, #96dae9, #38c5e5);
 }
 .related-item .related-item-txt a:active {
-  text-shadow: 0 -1px 0 #a6a6a6;
-  background-image: -webkit-linear-gradient(top, #cccccc, #cccccc);
-  background-image: linear-gradient(top, #cccccc, #cccccc);
+  text-shadow: 0 -1px 0 #42bcd7;
+  background-image: -webkit-linear-gradient(top, #81d3e5, #4fcce8);
+  background-image: linear-gradient(top, #81d3e5, #4fcce8);
 }
 
 .related-img {
