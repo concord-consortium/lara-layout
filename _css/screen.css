@@ -374,10 +374,6 @@ button {
   background-color: #e5e5e5;
 }
 
-.extra-pad {
-  padding-top: 70px;
-}
-
 .mod-border-rounded, .question-bd, .related-mod {
   border: 1px solid #ededed;
   -webkit-border-radius: 0 0 13px 13px;
@@ -408,6 +404,10 @@ button {
   content: "";
   display: table;
   clear: both;
+}
+
+.extra-pad {
+  padding-top: 70px;
 }
 
 /* ============================================= */
@@ -561,6 +561,7 @@ footer {
 .activity-nav .prev .prev-next-img img,
 .activity-nav .next .prev-next-img img {
   max-width: 100%;
+  margin-top: -1px;
 }
 .activity-nav .prev:hover,
 .activity-nav .next:hover {
