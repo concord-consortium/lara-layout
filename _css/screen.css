@@ -476,7 +476,7 @@ footer {
   -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 6px;
-  z-index: 1;
+  z-index: 9999;
 }
 .activity-nav-mod.fixed .activity-nav-logo h3 {
   text-indent: 0;
@@ -846,47 +846,43 @@ button[type="submit"] {
   margin: 0 auto;
   font-size: 13px;
   padding: 9px 13px;
-  background-color: #e6e6e6;
+  background: #f7b766;
+  background-image: -webkit-linear-gradient(top, #f7b766, #f3951d);
+  background-image: linear-gradient(top, #f7b766, #f3951d);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 1px 0 white;
-  color: #8c8c8c;
+  text-shadow: 0 -1px 0 #d27b0b;
+  border: 1px solid #f3951d;
   margin-top: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  border: 0;
+  color: #fcfcfc;
   padding: 15px 30px;
   font-size: 15px;
-  background-color: #f4a035;
   color: #fff;
   text-shadow: 0 -1px 0 #ba6c0a;
 }
 input[type="submit"]:hover,
 button[type="submit"]:hover {
-  background-color: #dedede;
+  background-image: -webkit-linear-gradient(top, #f6ac4d, #d27b0b);
+  background-image: linear-gradient(top, #f6ac4d, #d27b0b);
 }
 input[type="submit"]:active,
 button[type="submit"]:active {
-  background-color: #cccccc;
-  color: white;
-  text-shadow: 0 -1px 0 #a6a6a6;
-}
-input[type="submit"]:hover,
-button[type="submit"]:hover {
-  background-color: #f3951d;
-}
-input[type="submit"]:active,
-button[type="submit"]:active {
-  background-color: #ea890c;
+  text-shadow: 0 -1px 0 #d27b0b;
+  background-image: -webkit-linear-gradient(top, #f4a035, #ea890c);
+  background-image: linear-gradient(top, #f4a035, #ea890c);
 }
 
 input[type="button"],
@@ -894,33 +890,39 @@ button[type="button"] {
   border: 0;
   font-size: 13px;
   padding: 9px 13px;
-  background-color: #e6e6e6;
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #d9d9d9);
+  background-image: linear-gradient(top, #e6e6e6, #d9d9d9);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 1px 0 white;
-  color: #8c8c8c;
+  text-shadow: 0 -1px 0 #a6a6a6;
+  border: 1px solid #d9d9d9;
   margin-top: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
+  color: #fcfcfc;
 }
 input[type="button"]:hover,
 button[type="button"]:hover {
-  background-color: #dedede;
+  background-image: -webkit-linear-gradient(top, #d9d9d9, #bfbfbf);
+  background-image: linear-gradient(top, #d9d9d9, #bfbfbf);
 }
 input[type="button"]:active,
 button[type="button"]:active {
-  background-color: #cccccc;
-  color: white;
   text-shadow: 0 -1px 0 #a6a6a6;
+  background-image: -webkit-linear-gradient(top, #cccccc, #cccccc);
+  background-image: linear-gradient(top, #cccccc, #cccccc);
 }
 
 .sidebar-mod {
@@ -1079,33 +1081,39 @@ button[type="button"]:active {
 .related-item .related-item-txt a {
   font-size: 13px;
   padding: 9px 13px;
-  background-color: #e6e6e6;
+  background: #e6e6e6;
+  background-image: -webkit-linear-gradient(top, #e6e6e6, #d9d9d9);
+  background-image: linear-gradient(top, #e6e6e6, #d9d9d9);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 2px;
+  box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  text-shadow: 0 1px 0 white;
-  color: #8c8c8c;
+  text-shadow: 0 -1px 0 #a6a6a6;
+  border: 1px solid #d9d9d9;
   margin-top: 13px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
+  color: #fcfcfc;
   display: inline-block;
   padding: 7px 13px;
 }
 .related-item .related-item-txt a:hover {
-  background-color: #dedede;
+  background-image: -webkit-linear-gradient(top, #d9d9d9, #bfbfbf);
+  background-image: linear-gradient(top, #d9d9d9, #bfbfbf);
 }
 .related-item .related-item-txt a:active {
-  background-color: #cccccc;
-  color: white;
   text-shadow: 0 -1px 0 #a6a6a6;
+  background-image: -webkit-linear-gradient(top, #cccccc, #cccccc);
+  background-image: linear-gradient(top, #cccccc, #cccccc);
 }
 
 .related-img {

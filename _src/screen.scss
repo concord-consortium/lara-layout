@@ -54,29 +54,74 @@
 .cf { @include pie-clearfix; }
 
 
-@mixin btn {
+  // background-color: lighten($black-15, 10%);
+  // color: darken($black-15, 25%);
+// @mixin btn {
+//   font-size: 13px;
+//   padding: 9px 13px;
+//   background: lighten($black-15, 10%);
+//   background-image: -webkit-linear-gradient( top, lighten($black-15, 10%), lighten($black-15, 5%) );
+//   background-image:         linear-gradient(top, lighten($black-15, 10%), lighten($black-15, 5%) );
+//   -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, 
+//                       rgba(0, 0, 0, 0.05) 0 1px 2px;
+//           box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset, 
+//                       rgba(0, 0, 0, 0.05) 0 1px 2px;
+//   @include border-radius(4px);
+//   @include lt-txt-shadow(#fff);
+//   border: 1px solid lighten($black-15, 5%);
+//   margin-top: 13px;
+//   @include trans;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   text-align: center;
+
+//   &:hover {
+//     background-color: lighten($black-15, 7%);
+//   }
+
+//   &:active {
+//     background-color: $black-15;
+//     color: lighten($black-15, 20%);
+//     @include drk-txt-shadow($black-15);
+//   }
+// }
+
+
+@mixin btn( $color1: lighten($black-15, 10%), $color2: lighten($black-15, 5%) ) {
   font-size: 13px;
   padding: 9px 13px;
-  background-color: lighten($black-15, 10%);
+  background: $color1;
+  background-image: -webkit-linear-gradient( top, $color1, $color2);
+  background-image:         linear-gradient( top, $color1, $color2);
+  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset,
+                      rgba(0, 0, 0, 0.2) 0 1px 2px;
+          box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset,
+                      rgba(0, 0, 0, 0.2) 0 1px 3px;
   @include border-radius(4px);
-  @include lt-txt-shadow(#fff);
-  color: darken($black-15, 25%);
+  @include drk-txt-shadow( darken($color1, 10%) );
+  border: 1px solid $color2;
   margin-top: 13px;
-  @include trans;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+  @include trans;
+  color: #fcfcfc;
 
   &:hover {
-    background-color: lighten($black-15, 7%);
+    background-image: -webkit-linear-gradient( top, darken($color1, 5%), darken($color2, 10%) );
+    background-image:         linear-gradient( top, darken($color1, 5%), darken($color2, 10%) );
   }
 
   &:active {
-    background-color: $black-15;
-    color: lighten($black-15, 20%);
-    @include drk-txt-shadow($black-15);
+    // color: lighten($color1, 30%);
+    @include drk-txt-shadow( darken($color1, 10%) );
+    background-image: -webkit-linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
+    background-image:         linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
+    
   }
+
 }
+
 
 
 
@@ -172,7 +217,7 @@ footer {
     background: #fff;
     @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
     padding: 6px;
-    z-index: 1;
+    z-index: 9999;
     .activity-nav-logo {
       h3 {
         text-indent: 0;
@@ -626,23 +671,11 @@ input[type="submit"],
 button[type="submit"] {
   display: block;
   margin: 0 auto;
-  @include btn;
-  border: 0;
+  @include btn ( lighten($drk-orange, 15%), $drk-orange );
   padding: 15px 30px;
   font-size: 15px;
-  background-color: lighten($drk-orange, 5%);
-  // @include border-radius(8px);
   color: #fff;
-  // @include trans;
-  // cursor: pointer;
   @include drk-txt-shadow($drk-orange);
-  &:hover {
-    background-color: $drk-orange;
-  }
-  &:active {
-    background-color: darken($drk-orange, 5%);
-  }
-
 }
 
 
