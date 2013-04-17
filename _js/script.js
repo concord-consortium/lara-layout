@@ -15,59 +15,36 @@ $('.sidebar-mod a').click(function (e) {
 
 
 
-// fixed header
-// function sticky_header() {
-// 	var window_top = $(window).scrollTop();
-// 	var header_top = $('.activity-nav-mod').offset().top;
-// 	if (window_top > header_top) {
-// 		$(header_top).addClass('fixed');
-// 	} else {
-// 		$(header_top).removeClass('fixed');
-// 	}
-	
-
-// };
 
 
 
 
 
-
-
-
-// $(document).ready(function() {
-// 	var window_top = $(window).scrollTop();
-// 	var header_top = $('.activity-nav-mod');
-
-// 	if ( window_top > header_top ) {
-// 		$('.activity-nav-mod').addClass('fixed');
-// 		console.log('fixie');
-// 	} else {
-// 		$('activity-nav-mod').removeClass('fixed');
-// 		console.log('no fixie');
-// 	}
-
-// 	console.log('yo yolo yo');
-
-// }); 
-// end document.ready
 
 
 $(document).ready(function(){
-	var window_top = $(window).scrollTop();
-	var header_top = $('.activity-nav-mod').offset().top;
+	// var window_top = $(window).scrollTop();
+	// var header_top = $('.activity-nav-mod').offset().top;
+	var header_top = $('.content-hdr').offset().top;
+	console.log(header_top);
 
 	$(window).scroll(function(){
+		var window_top = $(window).scrollTop();
+		console.log(window_top);
 
-		if( $(window).scrollTop() > header_top ) {
+
+		if( window_top >= header_top/2 ) {
 			$('.activity-nav-mod').addClass('fixed');
-			console.log('fixed');
+			$('.content-hdr').addClass('extra-pad');
+			$('.activity-nav-mod.fixed').fadeIn();
+			$('.activity-nav-mod.fixed .activity-nav-logo .h2').addClass('visible');
+			
 		} else {
 			$('.activity-nav-mod').removeClass('fixed');
-			console.log('no fixie');
+			$('.content-hdr').removeClass('extra-pad');
+			$('.activity-nav-mod .activity-nav-logo .h2').removeClass('visible');
 		}
 	});
-	console.log('yo yolo');
 });
 
 

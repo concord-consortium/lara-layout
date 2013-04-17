@@ -374,6 +374,10 @@ button {
   background-color: #e5e5e5;
 }
 
+.extra-pad {
+  padding-top: 70px;
+}
+
 .mod-border-rounded, .question-bd, .related-mod {
   border: 1px solid #ededed;
   -webkit-border-radius: 0 0 13px 13px;
@@ -478,9 +482,6 @@ footer {
   padding: 10px 6px;
   z-index: 9999;
 }
-.activity-nav-mod.fixed .activity-nav-logo .h2 {
-  visibility: visible;
-}
 
 .activity-nav-logo {
   float: left;
@@ -493,8 +494,17 @@ footer {
   font-size: 18px;
   font-weight: normal;
   color: #f3951d;
-  visibility: hidden;
+  opacity: 0;
   line-height: 36px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.activity-nav-logo .h2.visible {
+  opacity: 1;
 }
 
 .l-nav {
@@ -645,7 +655,7 @@ footer {
   width: 70%;
   float: right;
 }
-.l-full-width .interactive-hdr .h5:after {
+.l-full-width .challenge .h5:after {
   border-left-color: #c4c4c4;
 }
 .l-full-width .h5:after {
@@ -702,16 +712,20 @@ footer {
   margin: 0 0 52px;
 }
 
+.challenge .question-hdr {
+  background: #c4c4c4;
+}
+.challenge .question-hdr .h5 {
+  text-shadow: 0 -1px 0 #a6a6a6;
+}
+.challenge .question-bd {
+  background: #f5f5f5;
+}
+
 .question-hdr {
   background: #6fc5d8;
   position: relative;
   padding: 4px 8px;
-}
-.question-hdr.interactive-hdr {
-  background: #c4c4c4;
-}
-.question-hdr.interactive-hdr .h5 {
-  text-shadow: 0 -1px 0 #a6a6a6;
 }
 .question-hdr .h5 {
   position: relative;
@@ -722,10 +736,6 @@ footer {
 
 .question-bd {
   padding: 26px;
-}
-
-.info-txt {
-  background: #f5f5f5;
 }
 
 .intro-mod,
