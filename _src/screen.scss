@@ -18,7 +18,7 @@
 
 .big-spacer { width: 100%; height: 36px; margin: 90px 0; background-color: #e5e5e5; }
 
-
+.interactive-fixed { position: fixed; top: 70px; z-index: 100; width: auto; }
 
 // *********************************************
 // Molecular Workbench Helpers
@@ -463,19 +463,72 @@ footer {
 
 
 
+// Sticky Interactives
+// --------------------------------
+
+.sticky-wrapper { margin-bottom: 52px; }
+
+
+.l-6040,
+.l-7030 {
+  .interactive-mod {
+    &.stuck {
+      position: fixed;
+      top: 100px;
+      @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
+    }
+  }
+}
+
+
+.l-7030 {
+  .sticky-wrapper {
+    width: 672px;
+    float: right;
+  }
+  .interactive-mod {
+    width: 672px;
+  }
+}
+
+
+.l-6040 {
+  .sticky-wrapper {
+    width: 576px;
+    float: right;
+  }
+  .interactive-mod {
+    width: 576px;
+  }
+}
+
+
+
 
 // Interactive + Questions
 // --------------------------------
 
 .content-mod {
   @extend .cf;
+  position: relative;
 }
+
+// .sticky-wrapper { margin-bottom: 52px; }
 
 .interactive-mod {
   margin-bottom: 52px;
-  width: 100%;
+  // width: 100%;
+  // width: 960px;
   height: 400px;
-  background: #666;
+  z-index: 100;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+
+
+
 }
 
 

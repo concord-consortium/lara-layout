@@ -374,6 +374,13 @@ button {
   background-color: #e5e5e5;
 }
 
+.interactive-fixed {
+  position: fixed;
+  top: 70px;
+  z-index: 100;
+  width: auto;
+}
+
 .mod-border-rounded, .question-bd, .related-mod {
   border: 1px solid #ededed;
   -webkit-border-radius: 0 0 13px 13px;
@@ -698,11 +705,47 @@ footer {
   max-width: 75%;
 }
 
+.sticky-wrapper {
+  margin-bottom: 52px;
+}
+
+.l-6040 .interactive-mod.stuck,
+.l-7030 .interactive-mod.stuck {
+  position: fixed;
+  top: 100px;
+  -webkit-box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.4);
+}
+
+.l-7030 .sticky-wrapper {
+  width: 672px;
+  float: right;
+}
+.l-7030 .interactive-mod {
+  width: 672px;
+}
+
+.l-6040 .sticky-wrapper {
+  width: 576px;
+  float: right;
+}
+.l-6040 .interactive-mod {
+  width: 576px;
+}
+
+.content-mod {
+  position: relative;
+}
+
 .interactive-mod {
   margin-bottom: 52px;
-  width: 100%;
   height: 400px;
-  background: #666;
+  z-index: 100;
+  overflow: hidden;
+}
+.interactive-mod img {
+  max-width: 100%;
 }
 
 .questions-mod {
