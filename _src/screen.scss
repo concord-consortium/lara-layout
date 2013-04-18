@@ -933,7 +933,7 @@ button[type="button"] {
   cursor: pointer;
   @include border-radius(5px);
   @include trans;
-  display: none;
+  // display: none;
 
   &:hover {
     background-color: darken($black-15, 15%);

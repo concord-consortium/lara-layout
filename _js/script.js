@@ -47,7 +47,7 @@ $(document).ready(function(){
 
 
 	// adding expanded class to .sidebar-mod
-	$('.sidebar-hdr' || '.sidebar-bd-close').click(function() {
+	$('.sidebar-hdr').add('.sidebar-bd-close').click(function() {
 		$('.sidebar-mod').toggleClass('expanded');
 	});
 

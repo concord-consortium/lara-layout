@@ -1142,7 +1142,6 @@ button[type="button"]:active {
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  display: none;
 }
 .sidebar-bd-close:hover {
   background-color: #a6a6a6;
