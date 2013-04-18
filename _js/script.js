@@ -3,15 +3,6 @@
 */
 
 
-
-
-// adding expanded class to .sidebar-mod
-$('.sidebar-mod a').click(function (e) {
-	e.preventDefault();
-	$('.sidebar-mod').toggleClass('expanded');
-	
-});
-
 $(document).ready(function(){
 	// var window_top = $(window).scrollTop();
 	// var header_top = $('.activity-nav-mod').offset().top;
@@ -49,6 +40,13 @@ $(document).ready(function(){
 	$('.interactive-mod').waypoint('sticky', {
 		offset: 120
 	});
+
+
+	// adding expanded class to .sidebar-mod
+	$('.sidebar-hdr').click(function() {
+		$('.sidebar-mod').toggleClass('expanded');
+	});
+
 
 	//prototyping save interaction
 	var i = 0;
