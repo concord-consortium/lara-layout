@@ -90,9 +90,9 @@ footer {
   background: $color1;
   background-image: -webkit-linear-gradient( top, $color1, $color2);
   background-image:         linear-gradient( top, $color1, $color2);
-  -webkit-box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset,
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 inset,
                       rgba(0, 0, 0, 0.2) 0 1px 2px;
-          box-shadow: rgba(255, 255, 255, 0.9) 0 1px 0 inset,
+          box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0 inset,
                       rgba(0, 0, 0, 0.2) 0 1px 2px;
   @include border-radius(4px);
   @include drk-txt-shadow( darken($color1, 10%) );
@@ -743,11 +743,12 @@ input[type="submit"],
 button[type="submit"] {
   display: block;
   margin: 0 auto;
-  @include btn ( lighten($drk-orange, 15%), $drk-orange );
+  // @include btn ( lighten($drk-orange, 15%), $drk-orange );
+  @include btn ( lighten($btn-orange, 8%), $btn-orange2 );
   padding: 15px 30px;
   font-size: 15px;
   color: #fff;
-  @include drk-txt-shadow($drk-orange);
+  @include drk-txt-shadow($btn-orange);
 }
 
 
@@ -949,9 +950,23 @@ button[type="button"] {
     line-height: 1.35em;
 
     a {
-      @include btn;
+      // @include btn;
       display: inline-block;
-      padding: 7px 13px;
+      padding: 7px 11px;
+      color: lighten($btn-blue2, 40%);
+      margin-top: 13px;
+      background-color: lighten($btn-blue2, 2%);
+      @include drk-txt-shadow($btn-blue2);
+      @include trans;
+
+      &:hover {
+        background-color: darken($btn-blue2, 4%);
+
+      }
+
+      &:active {
+        background-color: darken($btn-blue2, 10%);
+      }
     }
 
   }
