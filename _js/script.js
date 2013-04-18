@@ -3,7 +3,6 @@
 */
 
 
-
 $(document).ready(function(){
 	// var window_top = $(window).scrollTop();
 	// var header_top = $('.activity-nav-mod').offset().top;
@@ -42,10 +41,12 @@ $(document).ready(function(){
 		offset: 120
 	});
 
+
 	// adding expanded class to .sidebar-mod
 	$('.sidebar-hdr').click(function() {
 		$('.sidebar-mod').toggleClass('expanded');
 	});
+
 
 	//prototyping save interaction
 	var i = 0;
