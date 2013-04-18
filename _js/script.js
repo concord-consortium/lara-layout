@@ -12,12 +12,6 @@ $('.sidebar-mod a').click(function (e) {
 	
 });
 
-
-
-
-
-
-
 $(document).ready(function(){
 	// var window_top = $(window).scrollTop();
 	// var header_top = $('.activity-nav-mod').offset().top;
@@ -56,6 +50,17 @@ $(document).ready(function(){
 		offset: 120
 	});
 
+	//prototyping save interaction
+	var i = 0;
+	setInterval(function(){
+		$("#save").toggleClass('saved');
+		if(i==0){
+			$("#save").html("Saved.");
+		} else {
+			$("#save").html("Saving...");
+		}
+		i = 1-i;
+	}, 5000);
 });
 
 

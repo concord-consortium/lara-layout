@@ -89,7 +89,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -431,6 +431,29 @@ footer {
   padding-top: 70px;
 }
 
+#save {
+  padding: 6px 12px;
+  width: 90px;
+  text-align: center;
+  position: fixed;
+  z-index: 10000;
+  top: 10px;
+  right: 10px;
+  background-color: #bddfdf;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+#save.saved {
+  background-color: #EEE;
+}
+
 .site-width {
   width: 960px;
   margin: 0 auto;
@@ -492,7 +515,6 @@ footer {
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -542,7 +564,6 @@ footer {
   width: 40px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   height: 24px;
@@ -602,7 +623,6 @@ footer {
   display: block;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -742,7 +762,7 @@ footer {
   text-shadow: 0 -1px 0 #a6a6a6;
 }
 .challenge .question-bd {
-  background: #f5f5f5;
+  background: whitesmoke;
 }
 
 .question-hdr {
@@ -815,7 +835,7 @@ footer {
   font-weight: bold;
   font-size: 0.65em;
   padding: 3px 5px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   position: relative;
   top: -2px;
   -webkit-border-radius: 2px;
@@ -907,7 +927,6 @@ button[type="submit"] {
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   color: #fcfcfc;
@@ -951,7 +970,6 @@ button[type="button"] {
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   color: #fcfcfc;
@@ -977,7 +995,6 @@ button[type="button"]:active {
   padding: 13px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   z-index: 200;
@@ -1067,7 +1084,6 @@ button[type="button"]:active {
   border-radius: 5px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1130,7 +1146,6 @@ button[type="button"]:active {
   text-shadow: 0 -1px 0 #35abc5;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1198,7 +1213,6 @@ footer .footer-txt a {
   font-weight: bold;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1234,7 +1248,7 @@ footer .footer-txt a:hover {
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -1261,7 +1275,7 @@ footer .footer-txt a:hover {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
