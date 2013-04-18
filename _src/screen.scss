@@ -517,8 +517,13 @@ footer {
       // top: 100px;
       // top: 113px;
       top: 117px;
-      // @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
     }
+
+    &.bottomed {
+      position: absolute;
+      bottom: 0;
+    }
+
   }
 
 }
@@ -584,6 +589,7 @@ footer {
 
 .questions-mod {
   margin-bottom: 52px;
+  position: relative;
 }
 
 

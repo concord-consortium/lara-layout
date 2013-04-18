@@ -734,6 +734,11 @@ footer {
   position: fixed;
   top: 117px;
 }
+.l-6040 .interactive-mod.bottomed,
+.l-7030 .interactive-mod.bottomed {
+  position: absolute;
+  bottom: 0;
+}
 
 .l-7030 .sticky-wrapper {
   width: 672px;
@@ -768,6 +773,7 @@ footer {
 
 .questions-mod {
   margin-bottom: 52px;
+  position: relative;
 }
 
 .question {

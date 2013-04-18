@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var header_top = $('.content-hdr').offset().top;
 	var interactive_top = $('.interactive-mod').offset().top;
 	var content_top = $('.content-mod').offset().top;
-	console.log(header_top);
+	// console.log(header_top);
 
 	$(window).scroll(function(){
 		var window_top = $(window).scrollTop();
@@ -52,7 +52,7 @@ $(document).ready(function(){
 	});
 
 
-	//prototyping save interaction
+	// prototyping save interaction
 	var i = 0;
 	setInterval(function(){
 		$("#save").toggleClass('saved');
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
 
 
-	//Prototyping collapsing headers
+	// Prototyping collapsing headers
 	var w = $('.question-hdr-collapse').width();
 	var h = $('.question-hdr-collapse').height();
 	var count = $('.question-hdr-collapse').length;
