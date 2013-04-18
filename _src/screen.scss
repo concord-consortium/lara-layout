@@ -791,39 +791,40 @@ button[type="button"] {
   right: -715px;
   width: 800px;
   @include trans(.2s, all, ease-in-out);
-  // left: 900px;
   top: 25%;
   font-family: $lato-light;
   text-align: left;
-  // width: auto;
-  // width: 800px;
   @include border-radius(0 0 0 8px);
   background-color: #fff;
-  background-color: yellow;
+  display: none;
 
 
   &.expanded {
-    // max-width: 75%;
-    right: 10%;
+    // right: 10%;
+    right: 0;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.5),
+                0 0 0 4000px rgba(0, 0, 0, 0.5);
+        -webkit-transition: 0.10s position, 
+                            0.10s 0.05s box-shadow;
+        transition: 0.10s position,
+                    0.10s 0.05s box-shadow;
 
     .sidebar-hdr {
-      // position: absolute;
-      // left: -85px;
+      position: absolute;
+      left: -85px;
     }
 
     .sidebar-bd {
-      // position: static;
-      // right: 0;
+      padding: 30px;
     }
+
   }
+
 } // end sidebar-mod
 
 
 
 .sidebar-hdr {
-  // position: relative;
-  // left: -85px;
-  // position: absolute;
   cursor: pointer;
   left: 0;
   background-color: lighten($drk-orange, 5%);
@@ -833,7 +834,8 @@ button[type="button"] {
   padding: 8px;
   float: left;
   @include border-radius(3px 0 0 3px);
-  @include trans(.2s right);
+  // @include trans;
+  // @include trans(.2s right);
 
 
   &:hover {
@@ -863,14 +865,46 @@ button[type="button"] {
 
 
 .sidebar-bd {
-  // background-color: green;
   padding: 30px 30px 30px 105px;
-  // position: absolute;
-  // width: 800px;
-  // right: 800px;
-  // right: 400px;
-  // @include trans;
-  // display: none;
+  font-family: $lato-reg;
+  font-size: 16px;
+
+  .h4 {
+    font-size: 24px;
+    font-family: $lato-reg;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  .sidebar-txt {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+} // end sidebar-bd
+
+
+
+.sidebar-bd-close {
+  position: absolute;
+  background-color: $black-15;
+  padding: 2px 6px;
+  top: 16px;
+  right: 32px;
+  color: #fff;
+  cursor: pointer;
+  @include border-radius(5px);
+  @include trans;
+  display: none;
+
+  &:hover {
+    background-color: darken($black-15, 15%);
+  }
+
 }
 
 
