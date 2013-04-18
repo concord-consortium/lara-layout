@@ -646,6 +646,16 @@ footer {
   border: 1px solid #47b5cd;
   text-shadow: 0 -1px 0 #35abc5;
 }
+.pagination-item.home-link {
+  text-indent: -9999px;
+}
+.pagination-item.home-link .pagination-link {
+  background-image: url(../_img/home_blue.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 50%;
+  width: 24px;
+}
 
 .l-6040 .interactive-mod {
   width: 60%;
@@ -1271,24 +1281,54 @@ footer .footer-txt a:hover {
 }
 
 .index-mod {
-  text-align: center;
-}
-.index-mod .content-hdr .h2 {
-  font-size: 48px;
+  text-align: left;
 }
 .index-mod .intro-mod {
   margin-bottom: 60px;
 }
 .index-mod .intro-mod .intro-txt {
-  margin: 0 auto;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.35em;
 }
 .index-mod input[type="submit"],
 .index-mod button[type="submit"] {
   font-size: 20px;
   padding: 20px 86px;
+  margin: 0 0 24px;
+}
+.index-mod.intro-mod ul, .index-mod.intro-mod ol {
+  font-size: 20px;
+}
+.index-mod.intro-mod ul li, .index-mod.intro-mod ol li {
   margin-bottom: 24px;
+}
+.index-mod.intro-mod ul li a, .index-mod.intro-mod ol li a {
+  color: #666;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.index-mod.intro-mod ul li a:hover, .index-mod.intro-mod ol li a:hover {
+  color: #222;
+}
+
+.index-list-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 36px 0 20px;
+  text-transform: uppercase;
+  color: #6fc5d8;
+}
+
+.home-icon {
+  width: 5%;
+  margin: 60px 0 10px;
+}
+.home-icon img {
+  max-width: 100%;
+  opacity: 0.2;
 }
 
 /* ============================================= */

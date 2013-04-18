@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var window_top = $(window).scrollTop();
 
-
+		// Activity nav fixing
 		if( window_top >= header_top/2 ) {
 			$('.activity-nav-mod').addClass('fixed');
 			$('.content-hdr').addClass('extra-pad');
