@@ -762,14 +762,15 @@ footer {
   @include border-radius(10px);
 
   &.complete {
-    background-color: lighten($lt-blue, 10%);
+    background-color: $med-blue;
+    border: 0;
   }
 }
 
 .image-file {
   padding: 20px 20px 20px 40px;
   @include border-radius(5px);
-  @include box-shadow(2px 2px 10px #CCC);
+  @include box-shadow(2px 2px 10px $btn-blue);
   background-color: #FFF;
   text-align: center;
   background-image: url(../_img/image-complete.jpg);
@@ -781,7 +782,7 @@ footer {
   }
   a {
     font-size: 10px;
-    color: $blue;
+    color: $btn-blue;
     float: right;
   }
 }
