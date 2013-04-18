@@ -24,7 +24,7 @@
 
 
 /* ============================================= */
-/*  Universal                    */ 
+/*  Universal                                    */ 
 /* ============================================= */
 
 
@@ -242,17 +242,22 @@ footer {
     margin-left: 8px;
     width: 40px;
     @include trans;
+    height: 24px;
+    // background-image: url(../_img/next.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 48% 50%;
 
-    .prev-next-img {
-      width: 40%;
-      margin: 0 auto;
+    // .prev-next-img {
+    //   width: 40%;
+    //   margin: 0 auto;
 
-      img {
-        max-width: 100%;
-        margin-top: -1px;
-      }
+    //   img {
+    //     max-width: 100%;
+    //     margin-top: -1px;
+    //   }
 
-    }
+    // }
 
     &:hover {
       background-color: darken($med-blue, 5%);
@@ -266,10 +271,12 @@ footer {
 
   .prev {
     float: right;
+    background-image: url(../_img/prev.png);
   }
 
   .next {
     float: right;
+    background-image: url(../_img/next.png);
   }
 
   .pages {
@@ -472,8 +479,8 @@ footer {
     &.stuck {
       position: fixed;
       // top: 100px;
-      top: 99px;
-      @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
+      top: 113px;
+      // @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
     }
   }
 

@@ -18,10 +18,6 @@ $('.sidebar-mod a').click(function (e) {
 
 
 
-
-
-
-
 $(document).ready(function(){
 	// var window_top = $(window).scrollTop();
 	// var header_top = $('.activity-nav-mod').offset().top;
@@ -57,7 +53,7 @@ $(document).ready(function(){
 
 	// interactive sticky
 	$('.interactive-mod').waypoint('sticky', {
-		offset: 100
+		offset: 117
 	});
 
 });
