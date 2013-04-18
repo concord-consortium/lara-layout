@@ -15,16 +15,46 @@
 // @import "project/tooltips";
 
 
-
+// Not peritent to the actual website
 .big-spacer { width: 100%; height: 36px; margin: 90px 0; background-color: #e5e5e5; }
 
 .interactive-fixed { position: fixed; top: 70px; z-index: 100; width: auto; }
+
+
+
+
+/* ============================================= */
+/*  Universal                    */ 
+/* ============================================= */
+
+
+a     {   text-decoration: none; color: inherit; }
+strong  { font-weight: bold;  }
+em    { font-style: italic; }
+
+
+header,
+footer {
+  margin: 0 0 26px;
+  background-color: #e5e5e5;
+  color: white;
+}
+
+footer { 
+  margin-bottom: 0; 
+  padding: 26px;
+}
+
+
+
+
 
 // *********************************************
 // Molecular Workbench Helpers
 // *********************************************
 
 
+// Text shadows included on various elements
 @mixin drk-txt-shadow($color: $black-50) {
   @include text-shadow(0 -1px 0 darken($color, 15%));
 }
@@ -34,32 +64,26 @@
 }
 
 
+
+// Border used on questions and related-mod
 .mod-border-rounded {
   border: 1px solid $black-10;
   @include border-radius(0 0 13px 13px);
 }
 
 
-.header-gradient {
-  background-color: $lt-blue;
-  background-image: -webkit-gradient(linear, left top, left bottom, from( darken($black-10, 3%)), to($black-10) ); /* Chrome, Safari 4+ */
-  background-image: -webkit-linear-gradient(top, darken($black-10, 3%), $black-10); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-  background-image:    -moz-linear-gradient(top, darken($black-10, 3%), $black-10); /* Firefox 3.6-15 */
-  background-image:      -o-linear-gradient(top, darken($black-10, 3%), $black-10); /* Opera 11.10-12.00 */
-  background-image:         linear-gradient(to bottom, darken($black-10, 3%), $black-10); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-
-}
-
 
 // Clearfix
 .cf { @include pie-clearfix; }
 
 
-// Extra padding applied when nav is in fixed position
+
+// Extra padding applied via JS when nav is in fixed position
 .extra-pad { padding-top: 70px; }
 
 
-// ( $color1: lighten($black-15, 10%), $color2: lighten($black-15, 5%) )
+
+// Button mixin. By default, a btn will be blue. Pass two colors into include to change color scheme
 @mixin btn( $color1: lighten($btn-blue2, 5%), $color2: darken($btn-blue, 5%) ) {
   font-size: 13px;
   padding: 9px 13px;
@@ -97,29 +121,23 @@
 
 
 
-  
-/* ============================================= */
-/*	Universal						   			 */ 
-/* ============================================= */
+// *********************************************
+// Molecular Workbench Styles
+// *********************************************
 
 
-
-a 		{ 	text-decoration: none; color: inherit; }
-strong	{	font-weight: bold;	}
-em   	{	font-style: italic;	}
-
-
-header,
-footer {
-	margin: 0 0 26px;
-  background-color: #e5e5e5;
-	color: white;
+.site-width {
+  width: 960px;
+  margin: 0 auto;
 }
 
-footer { 
-  margin-bottom: 0; 
-  padding: 26px;
+
+.activity-mod {
+  margin-bottom: 26px;
+  position: relative;
+  font-family: $lato-reg;
 }
+
 
 
 
@@ -150,24 +168,6 @@ footer {
 
 
 
-// *********************************************
-// Molecular Workbench Styles
-// *********************************************
-
-
-.site-width {
-  width: 960px;
-  margin: 0 auto;
-}
-
-
-
-.activity-mod {
-  margin-bottom: 26px;
-  position: relative;
-  font-family: $lato-reg;
-}
-
 
 
 // Activity nav
@@ -187,14 +187,11 @@ footer {
     @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
     padding: 10px 6px;
     z-index: 9999;
-    .activity-nav-logo {
-      .h2 {
-        // visibility: visible;
-
-      }
-    }
   }
+
 }
+
+
 
 .activity-nav-logo {
   float: left;
@@ -202,51 +199,44 @@ footer {
   img {
     max-width: 100%;
   }
-   // h3 {
-   //      text-indent: -9999em;
-   //    }
-   .h2 {
+
+  .h2 {
     font-family: $lato-reg;
     font-size: 18px;
     font-weight: normal;
     color: $drk-orange;
-    // visibility: visible;
     opacity: 0;
-    // display: none;
     line-height: 36px;
     opacity: 0;
     @include trans;
-    // visibility: visible;
+
     &.visible {
       opacity: 1;
     }
+
   }
+
 }
 
 
-
+// This controlls the layout of the nav
 .l-nav {
     // @include ui-grid-2(18%,80%,10%);
     @include ui-grid-2(50%, 50%, 5%);
 }
 
+
+
 .activity-nav {
-  // margin: 5px auto 0;
   margin-top: 8px;
   position: relative;
   @extend .cf;
   
   .prev,
   .next {
-    // background-color: $drk-orange;
     background-color: lighten($med-blue, 5%);
-    // border: 1px solid #fff;
     border: 1px solid $med-blue;
-    // @include box-shadow(0 1px 5px $black-10);
     @include border-radius(3px);
-    // padding: 0 20px;
-    // padding: 0 14px;
-    // line-height: 28px;
     line-height: 22px;
     text-align: center;
     margin-left: 8px;
@@ -256,21 +246,19 @@ footer {
     .prev-next-img {
       width: 40%;
       margin: 0 auto;
+
       img {
         max-width: 100%;
         margin-top: -1px;
-
       }
+
     }
 
     &:hover {
-      background-color: lighten(#ffa600, 10%);
       background-color: darken($med-blue, 5%);
     }
     
     &:active {
-      // background: #6ac5d8;
-      // background: black;
       background-color: darken($med-blue, 20%);
     }
 
@@ -278,26 +266,26 @@ footer {
 
   .prev {
     float: right;
-    // width: 5%;
   }
 
   .next {
     float: right;
-    // width: 5%;
   }
 
   .pages {
     float: right;
   }
 
-}
+} // end .activity-nav
+
+
 
 .pagination {
   @extend .cf;
-  // width: auto;
   text-align: center;
   margin-right: 8px;
 }
+
 
 .pagination-item {
   margin-left: 6px;
@@ -311,16 +299,13 @@ footer {
 
   .pagination-link {
     background-color: lighten($med-blue, 27%);
-    @include border-radius(3px);
     color: $med-blue;
-    // text-shadow: 0 1px 0 #fff;
+    @include border-radius(3px);
     @include lt-txt-shadow(#fff);
     border: 1px solid lighten($med-blue, 18%);
-    // padding: 5px 9px;
     padding: 3px 5px;
     display: block;
     @include trans;
-
 
     &:hover {
       background: lighten($med-blue, 5%);
@@ -335,9 +320,12 @@ footer {
       @include drk-txt-shadow($med-blue);
     }
 
-  }
+  } // end .pagination-link
 
-}
+} // end .pagination-item
+
+
+
 
 
 
@@ -358,7 +346,9 @@ footer {
     width: 38%;
     float: left;
   }
-}
+} // end .l-6040
+
+
 
 
 // Layout: 7030
@@ -375,12 +365,14 @@ footer {
     float: left;
   }
 
-}
+} // end .l-7030
+
+
 
 
 // Layout: full-width
-
 .l-full-width {
+
   .question-hdr {
     width: 28%;
     float: left;
@@ -402,19 +394,20 @@ footer {
 
   .h5 {
     &:after {
-        position: absolute;
-        content: "\0020";
-        right: -28px;
-        top: -1px;
-        border: 12px solid $med-blue;
-        border-right-color: transparent;
-        border-top-color: transparent;
-        border-bottom-color: transparent;
-        // z-index: -1;
-      }
-}
+      position: absolute;
+      content: "\0020";
+      right: -28px;
+      top: -1px;
+      border: 12px solid $med-blue;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      // z-index: -1;
+    }
+  }
 
-}
+} // .l-full-width
+
 
 
 
@@ -422,6 +415,7 @@ footer {
 
 // Headline + Intro
 // --------------------------------
+
 
 // Headline block
 .content-hdr {
@@ -434,11 +428,11 @@ footer {
     font-weight: 100;
     letter-spacing: -1px;
     color: $drk-orange;
-    // margin-bottom: 36px; 
   }
   
- 
 }
+
+
 
 // Intro block
 .intro-mod {
@@ -446,7 +440,6 @@ footer {
   line-height: 1.45em;
   font-family: $lato-reg;
   margin-bottom: 39px;
-  // max-width: 75%;
 
  .h4 {
     font-weight: normal;
@@ -456,10 +449,12 @@ footer {
   }
 
   .intro-txt {
-    // color: yellow;
     max-width: 75%;
   }
+
 }
+
+
 
 
 
@@ -471,36 +466,50 @@ footer {
 
 .l-6040,
 .l-7030 {
+
   .interactive-mod {
+
     &.stuck {
       position: fixed;
-      top: 100px;
+      // top: 100px;
+      top: 99px;
       @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
     }
   }
+
 }
 
 
+
+// .sticky-wrapper need to have hard px widths to work correctly in fixed state
 .l-7030 {
+
   .sticky-wrapper {
     width: 672px;
     float: right;
   }
+
   .interactive-mod {
     width: 672px;
   }
+
 }
+
 
 
 .l-6040 {
+
   .sticky-wrapper {
     width: 576px;
     float: right;
   }
+
   .interactive-mod {
     width: 576px;
   }
+
 }
+
 
 
 
@@ -513,12 +522,10 @@ footer {
   position: relative;
 }
 
-// .sticky-wrapper { margin-bottom: 52px; }
 
 .interactive-mod {
   margin-bottom: 52px;
-  // width: 100%;
-  // width: 960px;
+  width: 100%;
   height: 400px;
   z-index: 100;
   overflow: hidden;
@@ -527,52 +534,44 @@ footer {
     max-width: 100%;
   }
 
-
-
 }
+
 
 
 .questions-mod {
   margin-bottom: 52px;
 }
 
+
 .question {
   margin: 0 0 52px;
   @extend .cf;
 }
 
-.challenge {
 
+.challenge {
   .question-hdr {
     background: darken($black-15, 3%);
     .h5 {
       @include drk-txt-shadow($black-15);
     }
   }
-
   .question-bd {
     background: $black-5;
   }
-}
+} // end .challenge
+
+
 
 .question-hdr {
   background: $med-blue;
   position: relative;
   padding: 4px 8px;
 
-  // &.interactive-hdr {
-  //   background: darken($black-15, 3%);
-  //   .h5 {
-  //     @include drk-txt-shadow($black-15);
-  //   }
-    
-  // }
-
   .h5 {
     position: relative;
     color: #fff;
     font-size: 16px;
-    // color: lighten($med-blue, 30%);
     @include drk-txt-shadow($med-blue);
   }
 
@@ -584,13 +583,10 @@ footer {
   @extend .mod-border-rounded;
 }
 
-.question-txt {
-  // font-size: 1.25em;
-}
 
-// .info-txt {
-//   background: $black-5;
-// }
+
+
+
 
 // Styling typographic elements
 // --------------------------------
@@ -629,7 +625,6 @@ footer {
 .intro-mod,
 .content-mod {
   ol {
-    // margin: 26px;
     counter-reset: li;
     list-style: none;
     *list-style: decimal;
@@ -660,6 +655,7 @@ footer {
 }
 
 
+
 // unordered lists
 .intro-mod,
 .content-mod {
@@ -676,6 +672,7 @@ footer {
     }
   }
 }
+
 
 
 //definition lists
@@ -735,7 +732,6 @@ footer {
 
 
 // submit
-
 input[type="submit"], 
 button[type="submit"] {
   display: block;
@@ -775,7 +771,6 @@ button[type="button"] {
   @include trans;
   z-index: 1;
 
-
   .sidebar-hdr {
     background-color: lighten($drk-orange, 5%);
     position: absolute;
@@ -784,14 +779,13 @@ button[type="button"] {
     max-width: 85px;
     border-right: 4px solid $drk-orange;
     @include border-radius(3px 0 0 3px);
-    // @include trans;
     z-index: 1;
 
     &:hover {
       background-color: darken($drk-orange, 5%);
     }
 
-  }
+  } // .sidebar-hdr
 
   .h5 {
     text-transform: uppercase;
@@ -827,28 +821,24 @@ button[type="button"] {
       font-weight: 400;
       margin-bottom: 14px;
     }
-  }
+
+  } // .sidebar-bd
 
 
 
-// sidebar expanded
+  // sidebar expanded
   &.expanded {
     text-align: left;
     width: 75%;
     max-width: 75%;
     padding: 0;
     border-right: 0;
-    // @include box-shadow(0 0px 24px $black-15);
-
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.6),
                 0 0 0 4000px rgba(0, 0, 0, 0.6);
         -webkit-transition: 0.35s position, 
-                  // 1s margin-left,
-                  // 0.25s position,
-                  0.35s 0.05s box-shadow;
+                            0.35s 0.05s box-shadow;
         transition: 0.35s position,
                     0.35s 0.05s box-shadow;
-
 
     .sidebar-bd {
       position: static;
@@ -886,7 +876,6 @@ button[type="button"] {
       width: 85px;
 
       h5 {
-        // display: none;
         text-align: center;
       }
     }
@@ -921,14 +910,17 @@ button[type="button"] {
   @extend .drk-text-shadow; 
 }
 
+
 .related-bd {
   padding: 16px 26px 30px;
   @extend .cf;
 }
 
+
 .related-items {
   @extend .cf;
 }
+
 
 .related-item {
   width: 30%;
@@ -957,7 +949,7 @@ button[type="button"] {
 
   }
 
-}
+} // .related-item
 
 
 .related-img {
@@ -972,10 +964,13 @@ button[type="button"] {
 
 
 
+
+
 // Image types
 // --------------------------------
 
 .content-img {
+
   img {
     max-width: 100%;
     padding: 1em;
@@ -987,7 +982,8 @@ button[type="button"] {
     margin-top: 5px;
     font-size: 12px;
   }
-}
+
+} // .content-img
 
 
 
@@ -999,13 +995,16 @@ button[type="button"] {
   margin-left: 2em;
 }
 
+
+
+// img inside a question
 .question-bd {
 
   .content-img {
     img {
       padding: 0;
       background-color: transparent;
-      border: 0;
+      // border: 0;
     }
   }
 
@@ -1014,6 +1013,7 @@ button[type="button"] {
   }
 
 }
+
 
 
 
@@ -1038,7 +1038,6 @@ button[type="button"] {
 footer {
   .footer-txt {
     margin-bottom: 13px;
-    // color: darken($lt-blue, 55%);
     color: $black-75;
     @include lt-txt-shadow(#fff);
 
@@ -1047,7 +1046,6 @@ footer {
     }
 
     a {
-      // color: darken($lt-blue, 41%);
       color: darken($black-75, 5%);
       font-weight: bold;
       @include trans;
@@ -1106,6 +1104,9 @@ footer {
   }
 
 } // end index-mod
+
+
+
 
 
 /* ============================================= */
