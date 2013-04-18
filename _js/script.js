@@ -81,12 +81,10 @@ $(document).ready(function(){
 		offset: 55+x*h
 	});
 
-});
-
-
-
-
 });  // end document.ready
+
+
+
 
 
 
