@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 	// interactive sticky
 	$('.interactive-mod').waypoint('sticky', {
-		offset: 117
+		offset: 120
 	});
 
 });

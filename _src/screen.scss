@@ -479,7 +479,8 @@ footer {
     &.stuck {
       position: fixed;
       // top: 100px;
-      top: 113px;
+      // top: 113px;
+      top: 117px;
       // @include box-shadow(0 2px 8px  -1px rgba(0, 0, 0, 0.4) );
     }
   }
@@ -777,7 +778,7 @@ button[type="button"] {
   text-align: center;
   padding: 13px;
   @include trans;
-  z-index: 1;
+  z-index: 200;
 
   .sidebar-hdr {
     background-color: lighten($drk-orange, 5%);

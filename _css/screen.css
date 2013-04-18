@@ -693,7 +693,7 @@ footer {
 .l-6040 .interactive-mod.stuck,
 .l-7030 .interactive-mod.stuck {
   position: fixed;
-  top: 113px;
+  top: 117px;
 }
 
 .l-7030 .sticky-wrapper {
@@ -980,7 +980,7 @@ button[type="button"]:active {
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  z-index: 1;
+  z-index: 200;
 }
 .sidebar-mod .sidebar-hdr {
   background-color: #f4a035;
