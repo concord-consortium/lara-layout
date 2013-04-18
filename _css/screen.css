@@ -454,6 +454,11 @@ footer {
   background-color: #EEE;
 }
 
+.question-hdr-collapse.stuck {
+  position: fixed;
+  z-index: 10000;
+}
+
 .site-width {
   width: 960px;
   margin: 0 auto;
@@ -755,22 +760,22 @@ footer {
   margin: 0 0 52px;
 }
 
-.challenge .question-hdr {
+.challenge .question-hdr, .challenge .question-hdr-collapse {
   background: #c4c4c4;
 }
-.challenge .question-hdr .h5 {
+.challenge .question-hdr .h5, .challenge .question-hdr-collapse .h5 {
   text-shadow: 0 -1px 0 #a6a6a6;
 }
 .challenge .question-bd {
   background: whitesmoke;
 }
 
-.question-hdr {
+.question-hdr, .question-hdr-collapse {
   background: #6fc5d8;
   position: relative;
   padding: 4px 8px;
 }
-.question-hdr .h5 {
+.question-hdr .h5, .question-hdr-collapse .h5 {
   position: relative;
   color: #fff;
   font-size: 16px;

@@ -142,6 +142,11 @@ footer {
   }
 }
 
+.question-hdr-collapse.stuck {
+  position: fixed;
+  z-index: 10000;
+}
+
 .site-width {
   width: 960px;
   margin: 0 auto;
@@ -574,7 +579,7 @@ footer {
 
 
 .challenge {
-  .question-hdr {
+  .question-hdr, .question-hdr-collapse {
     background: darken($black-15, 3%);
     .h5 {
       @include drk-txt-shadow($black-15);
@@ -587,7 +592,7 @@ footer {
 
 
 
-.question-hdr {
+.question-hdr, .question-hdr-collapse {
   background: $med-blue;
   position: relative;
   padding: 4px 8px;

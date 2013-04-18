@@ -61,6 +61,23 @@ $(document).ready(function(){
 		}
 		i = 1-i;
 	}, 5000);
+
+
+	//Prototyping collapsing headers
+	var w = $('.question-hdr-collapse').width();
+	var h = $('.question-hdr-collapse').height();
+	var count = $('.question-hdr-collapse').length;
+	var x = 1;
+
+	$('.question-hdr-collapse').waypoint(function() {
+		$(this).toggleClass('stuck');
+		$(this).css('width', w);
+		$(this).css('top', 55+x*h);
+		x++;
+	}, {
+		offset: 55+x*h
+	});
+
 });
 
 
