@@ -398,16 +398,7 @@ footer {
 // Layout: 6040
 .l-6040 {
   @extend .cf;
-
-  .interactive-mod {
-    width: 60%;
-    float: right;
-  }
-
-  .questions-mod {
-    width: 38%;
-    float: left;
-  }
+  @include ui-grid-rl(60%, 40%, 2%);
 } // end .l-6040
 
 
@@ -526,27 +517,18 @@ footer {
 .sticky-wrapper { margin-bottom: 52px; }
 
 
-.l-6040,
-.l-7030 {
+.interactive-mod {
 
-  .interactive-mod {
-
-    &.stuck {
-      position: fixed;
-      // top: 100px;
-      // top: 113px;
-      top: 117px;
-    }
-
-    &.bottomed {
-      position: absolute;
-      bottom: 0;
-    }
-
+  &.stuck {
+    position: fixed;
+    top: 65px;
   }
 
+  &.bottomed {
+    position: absolute;
+    bottom: 0;
+  }
 }
-
 
 
 // .sticky-wrapper need to have hard px widths to work correctly in fixed state
@@ -559,21 +541,6 @@ footer {
 
   .interactive-mod {
     width: 672px;
-  }
-
-}
-
-
-
-.l-6040 {
-
-  .sticky-wrapper {
-    width: 576px;
-    float: right;
-  }
-
-  .interactive-mod {
-    width: 576px;
   }
 
 }

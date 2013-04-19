@@ -1,15 +1,14 @@
-/* Author: 
-
-*/
-
-
 $(document).ready(function(){
-	// var window_top = $(window).scrollTop();
-	// var header_top = $('.activity-nav-mod').offset().top;
+
 	var header_top = $('.content-hdr').offset().top;
 	var interactive_top = $('.interactive-mod').offset().top;
 	var content_top = $('.content-mod').offset().top;
-	// console.log(header_top);
+	
+	var q_height = $('.content-mod').height();
+	var i_width =$('.interactive-mod').width();
+	var i_height = $('.interactive-mod').height();
+
+
 
 	$(window).scroll(function(){
 		var window_top = $(window).scrollTop();
@@ -32,14 +31,7 @@ $(document).ready(function(){
 		if( window_top >= content_top/2 ) {
 			$('.sidebar-mod').delay(400).fadeIn(1600);
 		};
-	
 
-	});
-
-
-	// interactive sticky
-	$('.interactive-mod').waypoint('sticky', {
-		offset: 120
 	});
 
 
@@ -48,6 +40,32 @@ $(document).ready(function(){
 		$('.sidebar-mod').toggleClass('expanded');
 	});
 
+	//This fixes the interactive-mod when the window hits the questions
+	$('.questions-mod').waypoint(function(direction){
+		if(direction=='down'){
+			$('.interactive-mod').addClass('stuck');
+			$('.interactive-mod').css({
+				'width':i_width
+			});
+		}
+		if(direction=='up'){
+			$('.interactive-mod').removeClass('stuck');
+		}
+	}, { offset: 120 }
+	);
+
+	//this un-fixes it when we scroll past its track
+	$('.related-mod').waypoint(function(direction){
+		if(direction=='down'){
+			$('.interactive-mod').removeClass('stuck');
+			$('.interactive-mod').addClass('bottomed');
+		}
+		if(direction=='up'){
+			$('.interactive-mod').addClass('stuck');
+			$('.interactive-mod').removeClass('bottomed');
+		}
+	}, { offset: i_height + 180 }
+	);
 
 	// prototyping save interaction
 	var i = 0;
@@ -64,17 +82,3 @@ $(document).ready(function(){
 	}, 5000);
 
 });  // end document.ready
-
-
-
-
-
-
-
-
-
-
-
-
-
-

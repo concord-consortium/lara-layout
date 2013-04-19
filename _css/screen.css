@@ -681,13 +681,26 @@ footer {
   width: 24px;
 }
 
-.l-6040 .interactive-mod {
-  width: 60%;
+.l-6040 {
+  *zoom: 1;
+}
+.l-6040:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-6040 > .ui-block-1,
+.l-6040 > .ui-block.first {
+  width: 59%;
+  display: inline;
   float: right;
 }
-.l-6040 .questions-mod {
-  width: 38%;
+.l-6040 > .ui-block-2,
+.l-6040 > .ui-block.second {
+  width: 39%;
+  display: inline;
   float: left;
+  margin-right: 0;
 }
 
 .l-7030 .interactive-mod {
@@ -753,13 +766,11 @@ footer {
   margin-bottom: 52px;
 }
 
-.l-6040 .interactive-mod.stuck,
-.l-7030 .interactive-mod.stuck {
+.interactive-mod.stuck {
   position: fixed;
-  top: 117px;
+  top: 65px;
 }
-.l-6040 .interactive-mod.bottomed,
-.l-7030 .interactive-mod.bottomed {
+.interactive-mod.bottomed {
   position: absolute;
   bottom: 0;
 }
@@ -770,14 +781,6 @@ footer {
 }
 .l-7030 .interactive-mod {
   width: 672px;
-}
-
-.l-6040 .sticky-wrapper {
-  width: 576px;
-  float: right;
-}
-.l-6040 .interactive-mod {
-  width: 576px;
 }
 
 .content-mod {
