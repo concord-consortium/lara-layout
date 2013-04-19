@@ -856,25 +856,29 @@ button[type="button"] {
   position: fixed;
   right: -715px;
   width: 800px;
-  @include trans(.2s, all, ease-in-out);
+  @include trans(.4s, all, ease);
   top: 25%;
   font-family: $lato-light;
   text-align: left;
   @include border-radius(0 0 0 8px);
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: transparent;
   display: none;
   z-index: 200;
 
 
   &.expanded {
-    // right: 10%;
     right: 0;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.5),
-                0 0 0 4000px rgba(0, 0, 0, 0.5);
-        -webkit-transition: 0.10s position, 
-                            0.10s 0.05s box-shadow;
-        transition: 0.10s position,
-                    0.10s 0.05s box-shadow;
+    background-color: #fff;
+    box-shadow: -3px 2px 15px rgba(0, 0, 0, 0.3),
+                0 0 0 8000px rgba(68, 68, 68, 0.1),
+                0 0 0 8000px rgba(255, 255, 255, 0.7);
+        -webkit-transition: 0.4s right,
+                            0.85s background-color, 
+                            0.20s 0.05s ease box-shadow;
+                transition: 0.4s right,
+                            0.85s background-color,
+                            0.20s 0.05s ease box-shadow;
 
     .sidebar-hdr {
       position: absolute;
@@ -883,6 +887,9 @@ button[type="button"] {
 
     .sidebar-bd {
       padding: 30px;
+      background-color: #fff;
+      // background-color: $black-5;
+      // display: block;
     }
 
   }
@@ -919,7 +926,7 @@ button[type="button"] {
   }
 
   .sidebar-hdr-img {
-    width: 60%;
+    width: 40%;
     margin: 0 auto;
 
     img {
@@ -935,6 +942,9 @@ button[type="button"] {
   padding: 30px 30px 30px 105px;
   font-family: $lato-reg;
   font-size: 16px;
+  @include border-radius(0 0 0 8px);
+  // display: none;
+  background-color: transparent;
 
   .h4 {
     font-size: 24px;
@@ -966,7 +976,6 @@ button[type="button"] {
   cursor: pointer;
   @include border-radius(5px);
   @include trans;
-  // display: none;
 
   &:hover {
     background-color: darken($black-15, 15%);
