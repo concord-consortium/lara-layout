@@ -405,22 +405,29 @@ footer {
   @extend .cf;
 
   .interactive-mod {
-    width: 100%;
+    width: 60%;
+    float: right;
+    
+    // width: 100%;
 
-    @media screen and (min-width: 1024px) {
-      width: 60%;
-      float: right;
-    }
+    // @media screen and (min-width: 1024px) {
+    //   width: 60%;
+    //   float: right;
+    // }
     
   }
 
   .questions-mod {
-    width: 100%;
+    width: 38%;
+    float: left;
 
-    @media screen and (min-width: 1024px) {
-      width: 38%;
-      float: left;
-    } 
+    // width: 100%;
+
+    // @media screen and (min-width: 1024px) {
+    //   width: 38%;
+    //   float: left;
+    // } 
+
   }
 
 } // end .l-6040
@@ -433,22 +440,30 @@ footer {
   @extend .cf;
 
   .interactive-mod {
-    width: 100%;
 
-    @media screen and (min-width: 1024px) {
-      width: 70%;
-      float: right;
-    }
+    width: 70%;
+    float: right;
+
+    // width: 100%;
+
+    // @media screen and (min-width: 1024px) {
+    //   width: 70%;
+    //   float: right;
+    // }
     
   }
 
   .questions-mod {
-    width: 100%;
 
-    @media screen and (min-width: 1024px) {
-      width: 28%;
-      float: left;
-    }
+    width: 28%;
+    float: left;
+
+    // width: 100%;
+
+    // @media screen and (min-width: 1024px) {
+    //   width: 28%;
+    //   float: left;
+    // }
     
   }
 

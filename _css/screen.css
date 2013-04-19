@@ -684,41 +684,21 @@ footer {
 }
 
 .l-6040 .interactive-mod {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .l-6040 .interactive-mod {
-    width: 60%;
-    float: right;
-  }
+  width: 60%;
+  float: right;
 }
 .l-6040 .questions-mod {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .l-6040 .questions-mod {
-    width: 38%;
-    float: left;
-  }
+  width: 38%;
+  float: left;
 }
 
 .l-7030 .interactive-mod {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .l-7030 .interactive-mod {
-    width: 70%;
-    float: right;
-  }
+  width: 70%;
+  float: right;
 }
 .l-7030 .questions-mod {
-  width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  .l-7030 .questions-mod {
-    width: 28%;
-    float: left;
-  }
+  width: 28%;
+  float: left;
 }
 
 .l-full-width .question-hdr {
