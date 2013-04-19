@@ -252,7 +252,12 @@ footer {
 // This controlls the layout of the nav
 .l-nav {
     // @include ui-grid-2(18%,80%,10%);
-    @include ui-grid-2(50%, 50%, 5%);
+    @include ui-grid-2(100%, 100%, 0);
+
+    @media screen and (min-width: 1100px) {
+      @include ui-grid-2(50%, 50%, 5%);
+    }
+    // @include ui-grid-2(50%, 50%, 5%);
 }
 
 
@@ -310,7 +315,12 @@ footer {
   }
 
   .pages {
-    float: right;
+    float: left;
+
+    @media screen and (min-width: 1100px) {
+      float: right;
+    }
+    
   }
 
 } // end .activity-nav

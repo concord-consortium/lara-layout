@@ -538,17 +538,39 @@ footer {
 }
 .l-nav > .ui-block-1,
 .l-nav > .ui-block.first {
-  width: 47.5%;
-  display: inline;
-  float: left;
-  margin-right: 5%;
-}
-.l-nav > .ui-block-2,
-.l-nav > .ui-block.second {
-  width: 47.5%;
+  width: 100%;
   display: inline;
   float: left;
   margin-right: 0;
+}
+.l-nav > .ui-block-2,
+.l-nav > .ui-block.second {
+  width: 100%;
+  display: inline;
+  float: left;
+  margin-right: 0;
+}
+@media screen and (min-width: 1100px) {
+  .l-nav {
+    *zoom: 1;
+  }
+  .l-nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .l-nav > .ui-block-1, .l-nav > .ui-block.first {
+    width: 47.5%;
+    display: inline;
+    float: left;
+    margin-right: 5%;
+  }
+  .l-nav > .ui-block-2, .l-nav > .ui-block.second {
+    width: 47.5%;
+    display: inline;
+    float: left;
+    margin-right: 0;
+  }
 }
 
 .activity-nav {
@@ -595,7 +617,12 @@ footer {
   background-image: url(../_img/next.png);
 }
 .activity-nav .pages {
-  float: right;
+  float: left;
+}
+@media screen and (min-width: 1100px) {
+  .activity-nav .pages {
+    float: right;
+  }
 }
 
 .pagination {
