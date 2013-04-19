@@ -438,7 +438,7 @@ footer {
   position: fixed;
   z-index: 10000;
   bottom: 20px;
-  right: 45%;
+  right: 20px;
   background-color: rgba(191, 229, 238, 0.9);
   border: 1px solid #b3e0ea;
   -webkit-border-radius: 3px;
