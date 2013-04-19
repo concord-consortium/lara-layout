@@ -215,6 +215,11 @@ footer {
     top: 0;
     background: #fff;
     @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
+
+    // protyping a better shadow for hiding content as it scrolls
+    // box-shadow: ( 0 2px 8px rgba(0, 0, 0, 0.2), 
+    //               0 30px 0px #fff );
+
     padding: 10px 6px;
     z-index: 9999;
   }
@@ -400,14 +405,24 @@ footer {
   @extend .cf;
 
   .interactive-mod {
-    width: 60%;
-    float: right;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+      float: right;
+    }
+    
   }
 
   .questions-mod {
-    width: 38%;
-    float: left;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 38%;
+      float: left;
+    } 
   }
+
 } // end .l-6040
 
 
@@ -418,13 +433,23 @@ footer {
   @extend .cf;
 
   .interactive-mod {
-    width: 70%;
-    float: right;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 70%;
+      float: right;
+    }
+    
   }
 
   .questions-mod {
-    width: 28%;
-    float: left;
+    width: 100%;
+
+    @media screen and (min-width: 1024px) {
+      width: 28%;
+      float: left;
+    }
+    
   }
 
 } // end .l-7030
@@ -621,6 +646,7 @@ footer {
 .challenge {
   .question-hdr, .question-hdr-collapse {
     background: darken($black-15, 3%);
+
     .h5 {
       @include drk-txt-shadow($black-15);
     }
@@ -636,6 +662,7 @@ footer {
   background: $med-blue;
   position: relative;
   padding: 4px 8px;
+  clear: both;
 
   .h5 {
     position: relative;
