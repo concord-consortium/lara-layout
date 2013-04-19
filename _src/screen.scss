@@ -134,10 +134,11 @@ footer {
   position: fixed;
   z-index: 10000;
   // top: 10px;
-  bottom: 10px;
+  bottom: 20px;
   right: 45%;
   // background-color: $lt-blue;
-  background-color: lighten($med-blue, 20%);
+  background-color: rgba( lighten($med-blue, 20%), 0.9 );
+  border: 1px solid lighten($med-blue, 17%);
   @include border-radius(3px);
   @include trans;
 

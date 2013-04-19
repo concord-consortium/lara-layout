@@ -437,9 +437,10 @@ footer {
   text-align: center;
   position: fixed;
   z-index: 10000;
-  bottom: 10px;
+  bottom: 20px;
   right: 45%;
-  background-color: #bfe5ee;
+  background-color: rgba(191, 229, 238, 0.9);
+  border: 1px solid #b3e0ea;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
