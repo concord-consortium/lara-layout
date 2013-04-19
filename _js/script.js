@@ -58,7 +58,9 @@ $(document).ready(function(){
 		$("#save").toggleClass('saved');
 		if(i==0){
 			$("#save").html("Saved.");
+			$("#save").animate({'opacity': '0'}, 'slow');
 		} else {
+			$("#save").animate({'opacity': '1.0'}, 'slow');
 			$("#save").html("Saving...");
 		}
 		i = 1-i;

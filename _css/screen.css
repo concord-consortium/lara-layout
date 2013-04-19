@@ -437,22 +437,19 @@ footer {
   text-align: center;
   position: fixed;
   z-index: 10000;
-  top: 10px;
-  right: 10px;
-  background-color: #bddfdf;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  bottom: 10px;
+  right: 45%;
+  background-color: #bfe5ee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-}
-#save.saved {
-  background-color: #EEE;
 }
 
 .question-hdr-collapse.stuck {

@@ -125,28 +125,35 @@ footer {
 // Molecular Workbench Styles
 // *********************************************
 
+
+// Saved feature
 #save {
   padding: 6px 12px;
   width: 90px;
   text-align: center;
   position: fixed;
   z-index: 10000;
-  top: 10px;
-  right: 10px;
-  background-color: $lt-blue;
-  @include border-radius(5px);
+  // top: 10px;
+  bottom: 10px;
+  right: 45%;
+  // background-color: $lt-blue;
+  background-color: lighten($med-blue, 20%);
+  @include border-radius(3px);
   @include trans;
 
   &.saved {
-    background-color: #EEE;
+    // background-color: #EEE;
   }
 }
 
+// Question header sticking prototype
 .question-hdr-collapse.stuck {
   position: fixed;
   z-index: 10000;
 }
 
+
+// Site Width
 .site-width {
   width: 85%;
   max-width: 960px;
