@@ -705,18 +705,24 @@ footer {
   margin-right: 0;
 }
 
-.l-7030 .interactive-mod {
-  width: 70%;
+.l-7030 {
+  *zoom: 1;
+}
+.l-7030:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-7030 > .ui-block-1, .l-7030 > .ui-block.first {
+  width: 69%;
+  display: inline;
   float: right;
 }
-.l-7030 .questions-mod {
+.l-7030 > .ui-block-2, .l-7030 > .ui-block.second {
+  width: 27%;
+  display: inline;
   float: left;
-  width: 21%;
-}
-@media screen and (min-width: 1100px) {
-  .l-7030 .questions-mod {
-    width: 27%;
-  }
+  margin-right: 0;
 }
 
 .l-full-width .question-hdr {
