@@ -1101,8 +1101,6 @@ button[type="button"]:active {
 
 .sidebar-mod {
   position: fixed;
-  right: -715px;
-  width: 800px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -1119,6 +1117,14 @@ button[type="button"]:active {
   background-color: transparent;
   display: none;
   z-index: 200;
+  width: 600px;
+  right: -515px;
+}
+@media screen and (min-width: 1024px) {
+  .sidebar-mod {
+    right: -715px;
+    width: 800px;
+  }
 }
 .sidebar-mod.expanded {
   right: 0;

@@ -878,17 +878,23 @@ button[type="button"] {
 // --------------------------------
 .sidebar-mod {
   position: fixed;
-  right: -715px;
-  width: 800px;
+  // right: -715px;
+  // width: 800px;
   @include trans(.4s, all, ease);
   top: 25%;
   font-family: $lato-light;
   text-align: left;
   @include border-radius(0 0 0 8px);
-  // background-color: #fff;
   background-color: transparent;
   display: none;
   z-index: 200;
+  width: 600px;
+  right: -515px;
+
+  @media screen and (min-width: 1024px) {
+    right: -715px;
+    width: 800px;
+  }
 
 
   &.expanded {
@@ -934,9 +940,6 @@ button[type="button"] {
   padding: 8px;
   float: left;
   @include border-radius(3px 0 0 3px);
-  // @include trans;
-  // @include trans(.2s right);
-
 
   &:hover {
     background-color: darken($drk-orange, 5%);
@@ -950,8 +953,6 @@ button[type="button"] {
     margin-top: 33px;
     @include drk-txt-shadow($drk-orange);
   }
-
-
 
 }
 
