@@ -85,7 +85,7 @@ footer {
 
 // Button mixin. By default, a btn will be blue. Pass two colors into include to change color scheme
 @mixin btn( $color1: lighten($btn-blue2, 5%), $color2: darken($btn-blue, 5%) ) {
-  font-size: 13px;
+  font-size: 15px;
   padding: 9px 13px;
   background: $color1;
   background-image: -webkit-linear-gradient( top, $color1, $color2);
@@ -99,7 +99,8 @@ footer {
   border: 1px solid $color2;
   margin-top: 13px;
   cursor: pointer;
-  text-transform: uppercase;
+  // text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   @include trans;
   color: #fcfcfc;

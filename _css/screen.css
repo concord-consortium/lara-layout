@@ -1014,7 +1014,7 @@ input[type="submit"],
 button[type="submit"] {
   display: block;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 15px;
   padding: 9px 13px;
   background: #f5a744;
   background-image: -webkit-linear-gradient(top, #f5a744, #f88c22);
@@ -1030,7 +1030,7 @@ button[type="submit"] {
   border: 1px solid #f88c22;
   margin-top: 13px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -1060,7 +1060,7 @@ button[type="submit"]:active {
 input[type="button"],
 button[type="button"] {
   border: 0;
-  font-size: 13px;
+  font-size: 15px;
   padding: 9px 13px;
   background: #83cddd;
   background-image: -webkit-linear-gradient(top, #83cddd, #34a5be);
@@ -1076,7 +1076,7 @@ button[type="button"] {
   border: 1px solid #34a5be;
   margin-top: 13px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
