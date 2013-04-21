@@ -431,28 +431,6 @@ footer {
   padding-top: 70px;
 }
 
-#save {
-  padding: 6px 12px;
-  width: 90px;
-  text-align: center;
-  position: fixed;
-  z-index: 10000;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgba(191, 229, 238, 0.9);
-  border: 1px solid #b3e0ea;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
 .question-hdr-collapse.stuck {
   position: fixed;
   z-index: 10000;
@@ -1364,6 +1342,28 @@ footer .footer-txt a {
 }
 footer .footer-txt a:hover {
   color: #2b5959;
+}
+
+#save {
+  padding: 6px 12px;
+  width: 90px;
+  text-align: center;
+  position: fixed;
+  z-index: 10000;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(191, 229, 238, 0.9);
+  border: 1px solid #b3e0ea;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .index-mod {
