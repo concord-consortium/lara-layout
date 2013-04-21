@@ -1045,12 +1045,14 @@ button[type="submit"] {
 }
 input[type="submit"]:hover,
 button[type="submit"]:hover {
+  background-color: #f49c2c;
   background-image: -webkit-linear-gradient(top, #f49c2c, #e07207);
   background-image: linear-gradient(top, #f49c2c, #e07207);
 }
 input[type="submit"]:active,
 button[type="submit"]:active {
   text-shadow: 0 -1px 0 #b06709;
+  background-color: #f29013;
   background-image: -webkit-linear-gradient(top, #f29013, #f77f09);
   background-image: linear-gradient(top, #f29013, #f77f09);
 }
@@ -1085,12 +1087,14 @@ button[type="button"] {
 }
 input[type="button"]:hover,
 button[type="button"]:hover {
+  background-color: #6fc5d8;
   background-image: -webkit-linear-gradient(top, #6fc5d8, #298296);
   background-image: linear-gradient(top, #6fc5d8, #298296);
 }
 input[type="button"]:active,
 button[type="button"]:active {
   text-shadow: 0 -1px 0 #309ab1;
+  background-color: #5bbdd3;
   background-image: -webkit-linear-gradient(top, #5bbdd3, #2e94aa);
   background-image: linear-gradient(top, #5bbdd3, #2e94aa);
 }

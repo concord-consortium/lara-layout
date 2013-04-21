@@ -105,12 +105,14 @@ footer {
   color: #fcfcfc;
 
   &:hover {
+    background-color: darken($color1, 5%);
     background-image: -webkit-linear-gradient( top, darken($color1, 5%), darken($color2, 10%) );
     background-image:         linear-gradient( top, darken($color1, 5%), darken($color2, 10%) );
   }
 
   &:active {
     @include drk-txt-shadow( darken($color1, 10%) );
+    background-color: darken($color1, 10%);
     background-image: -webkit-linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
     background-image:         linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
     
