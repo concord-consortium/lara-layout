@@ -925,9 +925,11 @@ button[type="button"] {
 .sidebar-hdr {
   cursor: pointer;
   left: 0;
-  background-color: lighten($drk-orange, 5%);
+  // background-color: lighten($drk-orange, 5%);
+  background: lighten($drk-orange, 5%) url('../_img/question.png') no-repeat 50% 10px;
   border-right: 4px solid $drk-orange;
   width: 85px;
+  height: 79px;
   text-align: center;
   padding: 8px;
   float: left;
@@ -945,18 +947,11 @@ button[type="button"] {
     color: #fff;
     font-size: 14px; 
     line-height: 1.05em;
-    margin-top: 7px;
+    margin-top: 33px;
     @include drk-txt-shadow($drk-orange);
   }
 
-  .sidebar-hdr-img {
-    width: 40%;
-    margin: 0 auto;
 
-    img {
-      max-width: 100%;
-    }
-  }
 
 }
 
