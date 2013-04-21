@@ -1103,6 +1103,7 @@ button[type="button"] {
 // --------------------------------
 
 .content-img {
+  position: relative;
 
   img {
     max-width: 100%;
@@ -1134,6 +1135,7 @@ button[type="button"] {
 .question-bd {
 
   .content-img {
+    position: relative;
     img {
       padding: 0;
       background-color: transparent;
@@ -1148,6 +1150,20 @@ button[type="button"] {
 }
 
 
+.img-expandable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: $med-blue url(../_img/plus.png) no-repeat center;
+  @include box-shadow(-1px 1px 2px rgba(0, 0, 0, 0.3) );
+  @include trans;
+
+  &:hover {
+    background-color: darken($med-blue, 8%);
+  }
+}
 
 
 
@@ -1195,15 +1211,8 @@ footer {
 
 
 
-// Fix footer to bottom of page
-// --------------------------------
-// body { height: 100%; }
-// html { height: 100%; }
-// #container { min-height: 100%; height: 100%; position: relative; }
-// footer { position: absolute; bottom: 0; width: 100%; }
 
-
-// Index page
+// Activity index page
 // --------------------------------
 
 .index-mod {
