@@ -1067,6 +1067,7 @@ button[type="button"]:active {
   z-index: 200;
   width: 600px;
   right: -515px;
+  -moz-transition: 0.4s right, 0.85s background-color, 0.2s 0.05s ease box-shadow;
   -webkit-transition: 0.4s right, 0.85s background-color, 0.2s 0.05s ease box-shadow;
   transition: 0.4s right, 0.85s background-color, 0.2s 0.05s ease box-shadow;
 }

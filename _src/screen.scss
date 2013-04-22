@@ -702,6 +702,9 @@ button[type="button"] {
   }
 
   //transitions for "close" action
+  -moz-transition: 0.4s right,
+                      0.85s background-color, 
+                      0.20s 0.05s ease box-shadow;
   -webkit-transition: 0.4s right,
                       0.85s background-color, 
                       0.20s 0.05s ease box-shadow;
