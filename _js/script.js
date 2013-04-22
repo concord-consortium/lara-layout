@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	var header_top = $('.content-hdr').offset().top;
-	var interactive_top = $('.pinned').offset().top;
+	var interactive_top = $('.interactive-mod').offset().top;
 	var content_top = $('.content-mod').offset().top;
 	
 	var q_height = $('.content-mod').height();
@@ -26,7 +26,6 @@ $(document).ready(function(){
 			$('.activity-nav-mod .activity-nav-logo .h2').removeClass('visible');
 		}
 
-
 		// reveal sidebar-mod
 		if( window_top >= content_top/2 ) {
 			$('.sidebar-mod').delay(400).fadeIn(1600);
@@ -40,7 +39,7 @@ $(document).ready(function(){
 		$('.sidebar-mod').toggleClass('expanded');
 	});
 
-	//This fixes the pinned when the window hits the questions
+	//This fixes the interactive mod when the window hits the questions
 	$('.questions-mod').waypoint(function(direction){
 		if(direction=='down'){
 			$('.pinned').addClass('stuck');
