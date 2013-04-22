@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
 	var header_top = $('.content-hdr').offset().top;
-	var interactive_top = $('.interactive-mod').offset().top;
+	var interactive_top = $('.pinned').offset().top;
 	var content_top = $('.content-mod').offset().top;
 	
 	var q_height = $('.content-mod').height();
-	var i_width =$('.interactive-mod').width();
-	var i_height = $('.interactive-mod').height();
+	var i_width =$('.pinned').width();
+	var i_height = $('.pinned').height();
 
 
 
@@ -40,16 +40,16 @@ $(document).ready(function(){
 		$('.sidebar-mod').toggleClass('expanded');
 	});
 
-	//This fixes the interactive-mod when the window hits the questions
+	//This fixes the pinned when the window hits the questions
 	$('.questions-mod').waypoint(function(direction){
 		if(direction=='down'){
-			$('.interactive-mod').addClass('stuck');
-			$('.interactive-mod').css({
+			$('.pinned').addClass('stuck');
+			$('.pinned').css({
 				'width':i_width
 			});
 		}
 		if(direction=='up'){
-			$('.interactive-mod').removeClass('stuck');
+			$('.pinned').removeClass('stuck');
 		}
 	}, { offset: 120 }
 	);
@@ -57,12 +57,12 @@ $(document).ready(function(){
 	//this un-fixes it when we scroll past its track
 	$('.related-mod').waypoint(function(direction){
 		if(direction=='down'){
-			$('.interactive-mod').removeClass('stuck');
-			$('.interactive-mod').addClass('bottomed');
+			$('.pinned').removeClass('stuck');
+			$('.pinned').addClass('bottomed');
 		}
 		if(direction=='up'){
-			$('.interactive-mod').addClass('stuck');
-			$('.interactive-mod').removeClass('bottomed');
+			$('.pinned').addClass('stuck');
+			$('.pinned').removeClass('bottomed');
 		}
 	}, { offset: i_height + 180 }
 	);
