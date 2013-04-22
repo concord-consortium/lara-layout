@@ -283,6 +283,12 @@ footer {
       width: 24px;
     }
   } // end .home-link
+
+  &.home-link {
+    .selected {
+      background-image: url(../_img/home_white.png);
+    }
+  }
 } // end .pagination-item
 
 
@@ -514,6 +520,7 @@ footer {
 }
 
 // ordered lists
+
 .intro-mod,
 .content-mod {
   ol {
@@ -1012,6 +1019,11 @@ footer {
 // Activity Index Page
 // ******************************************
 
+.index-width {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .index-mod {
   text-align: left;
 
@@ -1032,19 +1044,31 @@ footer {
   }
 
   &.intro-mod {
+
     ul, ol {
       font-size: 20px;
 
       li {
         margin-bottom: 24px;
+        &:before {
+          background-color: $lt-blue;
+          border: 1px solid $med-blue;
+        }
 
         a { 
           color: #666;
+          color: $med-blue;
           @include trans;
 
-          &:hover {
-            color: #222;
+          &:visited {
+            color: #aaa;
           }
+
+          &:hover {
+            color: darken($med-blue, 20%);
+          }
+
+          
         }//a
       }//li
     }//ul,ol
@@ -1056,14 +1080,18 @@ footer {
   font-weight: bold;
   margin: 36px 0 20px;
   text-transform: uppercase;
-  color: $med-blue;
+  color: #666;
 }
 
-.home-icon {
-  width: 5%;
-  margin: 60px 0 10px;
-  img {
-    max-width: 100%;
-    opacity: 0.2;
+
+// social tools on index page
+.social-media-mod {
+  margin-bottom: 12px;
+
+  .fb-link {
+    position: relative;
+    top: -7px;
   }
 }
+
+
