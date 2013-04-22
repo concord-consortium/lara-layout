@@ -144,6 +144,8 @@ footer {
   width: 100%;
   color: #fff;
   @extend .cf;
+  @include trans;
+
 
   &.fixed {
     position: fixed;

@@ -17,7 +17,7 @@ $(document).ready(function(){
 		if( window_top >= header_top/2 ) {
 			$('.activity-nav-mod').addClass('fixed');
 			$('.content-hdr').addClass('extra-pad');
-			$('.activity-nav-mod.fixed').fadeIn();
+			// $('.activity-nav-mod.fixed').fadeIn();
 			$('.activity-nav-mod.fixed .activity-nav-logo .h2').addClass('visible');
 		} else {
 			$('.activity-nav-mod').removeClass('fixed');
