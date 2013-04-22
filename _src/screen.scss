@@ -1,37 +1,22 @@
 /* ## Bring in all Compass Helpers */ 
 @import "partials/base";
-
-/* ## Base CSS */
-// @import "project/type";
-// @import "project/forms";
-// @import "project/tables";     
-// @import "project/lists";
-
-/* ## Components */
-// @import "project/buttons";
-// @import "project/dropdowns";
-// @import "project/tabs";
-// @import "project/modals";
-// @import "project/tooltips";
+@import "project/fonts";
 
 
-// Not pertinent to the actual website
-.big-spacer { width: 100%; height: 36px; margin: 90px 0; background-color: #e5e5e5; }
-
-.interactive-fixed { position: fixed; top: 70px; z-index: 100; width: auto; }
+// *********************************************
+// Table of Contents
+// *********************************************
 
 
 
 
-/* ============================================= */
-/*  Universal                                    */ 
-/* ============================================= */
-
+// *********************************************
+// Universal
+// *********************************************
 
 a     {   text-decoration: none; color: inherit; }
 strong  { font-weight: bold;  }
 em    { font-style: italic; }
-
 
 header,
 footer {
@@ -46,13 +31,9 @@ footer {
 }
 
 
-
-
-
 // *********************************************
 // Molecular Workbench Helpers
 // *********************************************
-
 
 // Text shadows included on various elements
 @mixin drk-txt-shadow($color: $black-50) {
@@ -63,25 +44,17 @@ footer {
   @include text-shadow(0 1px 0 lighten($color, 10%));
 }
 
-
-
 // Border used on questions and related-mod
 .mod-border-rounded {
   border: 1px solid $black-10;
   @include border-radius(0 0 13px 13px);
 }
 
-
-
 // Clearfix
 .cf { @include pie-clearfix; }
 
-
-
 // Extra padding applied via JS when nav is in fixed position
 .extra-pad { padding-top: 70px; }
-
-
 
 // Button mixin. By default, a btn will be blue. Pass two colors into include to change color scheme
 @mixin btn( $color1: lighten($btn-blue2, 5%), $color2: darken($btn-blue, 5%) ) {
@@ -99,7 +72,6 @@ footer {
   border: 1px solid $color2;
   margin-top: 13px;
   cursor: pointer;
-  // text-transform: uppercase;
   text-transform: none;
   text-align: center;
   @include trans;
@@ -116,25 +88,13 @@ footer {
     background-color: darken($color1, 10%);
     background-image: -webkit-linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
     background-image:         linear-gradient( top, darken($color1, 10%), darken($color2, 5%) );
-    
   }
-
 }
 
 
-
-
 // *********************************************
-// Molecular Workbench Styles
+// Project Styles
 // *********************************************
-
-
-// Question header sticking prototype
-.question-hdr-collapse.stuck {
-  position: fixed;
-  z-index: 10000;
-}
-
 
 // Site Width
 .site-width {
@@ -148,10 +108,6 @@ footer {
   position: relative;
   font-family: $lato-reg;
 }
-
-
-
-
 
 // Site header
 // --------------------------------
@@ -179,9 +135,6 @@ footer {
 }
 
 
-
-
-
 // Activity nav
 // --------------------------------
 
@@ -203,8 +156,6 @@ footer {
 
 }
 
-
-
 .activity-nav-logo {
   float: left;
 
@@ -225,24 +176,13 @@ footer {
     &.visible {
       opacity: 1;
     }
-
   }
-
 }
-
 
 // This controlls the layout of the nav
 .l-nav {
-    // @include ui-grid-2(18%,80%,10%);
-    @include ui-grid-2(100%, 100%, 0);
-
-    @media screen and (min-width: 1100px) {
       @include ui-grid-2(50%, 50%, 5%);
-    }
-    // @include ui-grid-2(50%, 50%, 5%);
 }
-
-
 
 .activity-nav {
   margin-top: 8px;
@@ -264,7 +204,6 @@ footer {
     background-size: 40%;
     background-position: 48% 50%;
 
-
     &:hover {
       background-color: darken($med-blue, 5%);
     }
@@ -272,7 +211,6 @@ footer {
     &:active {
       background-color: darken($med-blue, 20%);
     }
-
   }
 
   .prev {
@@ -291,11 +229,8 @@ footer {
     @media screen and (min-width: 1100px) {
       float: right;
     }
-    
   }
-
 } // end .activity-nav
-
 
 
 .pagination {
@@ -303,7 +238,6 @@ footer {
   text-align: center;
   margin-right: 8px;
 }
-
 
 .pagination-item {
   margin-left: 6px;
@@ -337,11 +271,7 @@ footer {
       border: 1px solid darken($med-blue, 10%);
       @include drk-txt-shadow($med-blue);
     }
-
-
   } // end .pagination-link
-
-  
 
   &.home-link {
     text-indent: -9999px;
@@ -353,76 +283,24 @@ footer {
       width: 24px;
     }
   } // end .home-link
-
-
 } // end .pagination-item
-
-
-
-
 
 
 // Layout modes
 // --------------------------------
 
-
 // Layout: 6040
 .l-6040 {
   @extend .cf;
-  @include ui-grid-rl(60%, 38%, 2%);
+  @include ui-grid-rl(60%, 40%, 2%);
 } // end .l-6040
 
 
 // Layout: 7030
 .l-7030 {
   @extend .cf;
-  @include ui-grid-rl(70%, 28%, 2%);
+  @include ui-grid-rl(70%, 30%, 2%);
 }
-
-
-// // Layout: 7030
-// .l-7030 {
-//   @extend .cf;
-
-//   .interactive-mod {
-
-//     width: 70%;
-//     float: right;
-
-//     // width: 100%;
-
-//     // @media screen and (min-width: 1024px) {
-//     //   width: 70%;
-//     //   float: right;
-//     // }
-    
-//   }
-
-//   .questions-mod {
-
-//     // width: 28%;
-//     float: left;
-//     width: 21%;
-
-    
-
-//     @media screen and (min-width: 1100px) {
-//       width: 27%;
-//     }
-
-
-//     // width: 100%;
-
-//     // @media screen and (min-width: 1024px) {
-//     //   width: 28%;
-//     //   float: left;
-//     // }
-    
-//   }
-
-// } // end .l-7030
-
-
 
 
 // Layout: full-width
@@ -446,7 +324,6 @@ footer {
     }
   }
 
-
   .h5 {
     &:after {
       position: absolute;
@@ -459,11 +336,7 @@ footer {
       border-bottom-color: transparent;
     }
   }
-
 } // .l-full-width
-
-
-
 
 
 
@@ -505,7 +378,6 @@ footer {
   .intro-txt {
     max-width: 75%;
   }
-
 }
 
 
@@ -517,9 +389,7 @@ footer {
 
 .sticky-wrapper { margin-bottom: 52px; }
 
-
 .interactive-mod {
-
   &.stuck {
     position: fixed;
     top: 65px;
@@ -547,7 +417,6 @@ footer {
 }
 
 
-
 // Interactive + Questions
 // --------------------------------
 
@@ -566,22 +435,17 @@ footer {
   img {
     max-width: 100%;
   }
-
 }
-
-
 
 .questions-mod {
   margin-bottom: 52px;
   position: relative;
 }
 
-
 .question {
   margin: 0 0 52px;
   @extend .cf;
 }
-
 
 .challenge {
   .question-hdr, .question-hdr-collapse {
@@ -595,7 +459,6 @@ footer {
     background: $black-5;
   }
 } // end .challenge
-
 
 
 .question-hdr, .question-hdr-collapse {
@@ -613,13 +476,10 @@ footer {
 
 }
 
-
 .question-bd {
   padding: 26px;
   @extend .mod-border-rounded;
 }
-
-
 
 
 
@@ -640,7 +500,6 @@ footer {
   }
 }
 
-
 // disable extra margin on first and last paragraphs in a module
 .intro-mod,
 .question-bd {
@@ -653,8 +512,6 @@ footer {
     }
   }
 }
-
-
 
 // ordered lists
 .intro-mod,
@@ -685,10 +542,9 @@ footer {
         top: -2px;
         @include border-radius(2px);
       }
-    }
-  }
-}
-
+    } //li
+  }//ol
+}//content-mod
 
 
 // unordered lists
@@ -705,9 +561,8 @@ footer {
     li {
       margin-bottom: 13px;
     }
-  }
-}
-
+  }//ul
+}//content-mod
 
 
 //definition lists
@@ -751,7 +606,6 @@ footer {
   }
 }
 
-
 // radio buttons
 .intro-mod,
 .content-mod {
@@ -762,9 +616,6 @@ footer {
     margin-right: 8px;
   }
 }
-
-
-
 
 // screen shot answer
 .image-answer {
@@ -800,8 +651,6 @@ footer {
   }
 }
 
-
-
 // submit
 input[type="submit"], 
 button[type="submit"] {
@@ -814,8 +663,6 @@ button[type="submit"] {
   @include drk-txt-shadow($btn-orange);
 }
 
-
-
 // button
 input[type="button"],
 button[type="button"] {
@@ -824,20 +671,13 @@ button[type="button"] {
 }
 
 
-
-
-
-
-
-
+// ******************************************
 // Sidebar
-// --------------------------------
+// ******************************************
+
 .sidebar-mod {
   position: fixed;
-  // right: -715px;
-  // width: 800px;
-  @include trans(.4s, all, ease);
-  top: 25%;
+  top: 20%;
   font-family: $lato-light;
   text-align: left;
   @include border-radius(0 0 0 8px);
@@ -852,19 +692,21 @@ button[type="button"] {
     width: 800px;
   }
 
+  //transitions for "close" action
+  -webkit-transition: 0.4s right,
+                      0.85s background-color, 
+                      0.20s 0.05s ease box-shadow;
+          transition: 0.4s right,
+                      0.85s background-color,
+                      0.20s 0.05s ease box-shadow;
 
   &.expanded {
     right: 0;
     background-color: #fff;
+
     box-shadow: -3px 2px 15px rgba(0, 0, 0, 0.3),
                 0 0 0 8000px rgba(68, 68, 68, 0.1),
                 0 0 0 8000px rgba(255, 255, 255, 0.7);
-        -webkit-transition: 0.4s right,
-                            0.85s background-color, 
-                            0.20s 0.05s ease box-shadow;
-                transition: 0.4s right,
-                            0.85s background-color,
-                            0.20s 0.05s ease box-shadow;
 
     .sidebar-hdr {
       position: absolute;
@@ -875,12 +717,8 @@ button[type="button"] {
       padding: 30px;
       background-color: #fff;
     }
-
   } // end .expanded
-
 } // end sidebar-mod
-
-
 
 .sidebar-hdr {
   cursor: pointer;
@@ -907,10 +745,7 @@ button[type="button"] {
     margin-top: 33px;
     @include drk-txt-shadow($drk-orange);
   }
-
-}
-
-
+}//sidebar-hdr
 
 .sidebar-bd {
   padding: 30px 30px 30px 105px;
@@ -918,6 +753,8 @@ button[type="button"] {
   font-size: 16px;
   @include border-radius(0 0 0 8px);
   background-color: transparent;
+  height: 500px;
+  overflow: scroll;
 
   .h4 {
     font-size: 24px;
@@ -932,12 +769,8 @@ button[type="button"] {
     &:last-child {
       margin-bottom: 0;
     }
-
-  }
-
+  }//sidebar-txt
 } // end sidebar-bd
-
-
 
 .sidebar-bd-close {
   position: absolute;
@@ -953,16 +786,17 @@ button[type="button"] {
   &:hover {
     background-color: darken($black-15, 15%);
   }
-
-}
-
+}//sidebar-bd-close
 
 
 
 
 
-// Related module
-// --------------------------------
+
+// ******************************************
+// Related Module
+// ******************************************
+
 .related-mod {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -970,7 +804,6 @@ button[type="button"] {
   @extend .mod-border-rounded;
   @extend .cf;
 }
-
 
 .related-hdr {
   background-color: $med-blue;
@@ -982,17 +815,14 @@ button[type="button"] {
   @extend .drk-text-shadow; 
 }
 
-
 .related-bd {
   padding: 16px 26px 30px;
   @extend .cf;
 }
 
-
 .related-items {
   @extend .cf;
 }
-
 
 .related-item {
   width: 30%;
@@ -1025,17 +855,14 @@ button[type="button"] {
 
       &:hover {
         background-color: darken($btn-blue2, 4%);
-
       }
 
       &:active {
         background-color: darken($btn-blue2, 10%);
       }
-    }
-
-  }
-
-} // .related-item
+    }//a
+  }//related-item-txt
+} //related-item
 
 
 .related-img {
@@ -1045,15 +872,15 @@ button[type="button"] {
   img {
     max-width: 100%;
   }
-
 }
 
 
 
 
 
-// Image types
-// --------------------------------
+// ******************************************
+// Image Types
+// ******************************************
 
 .content-img {
   position: relative;
@@ -1069,10 +896,7 @@ button[type="button"] {
     margin-top: 5px;
     font-size: 12px;
   }
-
 } // .content-img
-
-
 
 .img-reg { max-width: 60%; }
 
@@ -1082,11 +906,8 @@ button[type="button"] {
   margin-left: 2em;
 }
 
-
-
 // img inside a question
 .question-bd {
-
   .content-img {
     position: relative;
     img {
@@ -1099,9 +920,7 @@ button[type="button"] {
   .img-reg {
     max-width: 100%;
   }
-
-}
-
+} //question-bd
 
 // expandable img icon
 .img-expandable {
@@ -1117,12 +936,14 @@ button[type="button"] {
   &:hover {
     background-color: darken($med-blue, 8%);
   }
-}
+}//img-expandable
 
 
 
-// Activity footer
-// --------------------------------
+// ******************************************
+// Activity Footer
+// ******************************************
+
 .activity-footer-mod {
   margin-bottom: 48px;
 
@@ -1133,11 +954,10 @@ button[type="button"] {
 
 
 
-
-
-
+// ******************************************
 // Site Footer
-// --------------------------------
+// ******************************************
+
 footer {
   .footer-txt {
     margin-bottom: 13px;
@@ -1156,19 +976,16 @@ footer {
       &:hover {
         color: darken($lt-blue, 55%);
       }
-
-    }
-
-  }
-
-}
+    }//a
+  }//footer-txt
+}//footer
 
 
 
+// ******************************************
+// Saved Label
+// ******************************************
 
-
-// Saved feature
-// --------------------------------
 #save {
   padding: 6px 12px;
   width: 90px;
@@ -1185,18 +1002,18 @@ footer {
   &.saved {
     // background-color: #EEE;
   }
-}
+}//save
 
 
 
 
 
-// Activity index page
-// --------------------------------
+// ******************************************
+// Activity Index Page
+// ******************************************
 
 .index-mod {
   text-align: left;
-
 
   .intro-mod {
     margin-bottom: 60px;
@@ -1205,9 +1022,7 @@ footer {
       font-size: 20px;
       line-height: 1.35em;
     }
-
   } // end intro-mod
-
 
   input[type="submit"], 
   button[type="submit"] {
@@ -1216,9 +1031,7 @@ footer {
     margin: 0 0 24px;
   }
 
-
   &.intro-mod {
-
     ul, ol {
       font-size: 20px;
 
@@ -1232,16 +1045,11 @@ footer {
           &:hover {
             color: #222;
           }
-
-        }
-      }
-
-    }
-
+        }//a
+      }//li
+    }//ul,ol
   } // end &.intro-mod
-
 } // end index-mod
-
 
 .index-list-header {
   font-size: 18px;
@@ -1259,20 +1067,3 @@ footer {
     opacity: 0.2;
   }
 }
-
-
-
-
-
-
-
-/* ============================================= */
-/*	Print Styles							     
-	Inline to avoid required HTTP connection     */
-/* ============================================= */
-
-// Import Print Styles
-@import "project/print";
-
-
-

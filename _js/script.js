@@ -19,7 +19,6 @@ $(document).ready(function(){
 			$('.content-hdr').addClass('extra-pad');
 			$('.activity-nav-mod.fixed').fadeIn();
 			$('.activity-nav-mod.fixed .activity-nav-logo .h2').addClass('visible');
-			
 		} else {
 			$('.activity-nav-mod').removeClass('fixed');
 			$('.content-hdr').removeClass('extra-pad');
@@ -28,9 +27,8 @@ $(document).ready(function(){
 
 		// reveal sidebar-mod
 		if( window_top >= content_top/2 ) {
-			$('.sidebar-mod').delay(400).fadeIn(1600);
-		};
-
+			$('.sidebar-mod').fadeIn(2000);
+		}
 	});
 
 
