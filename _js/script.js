@@ -38,15 +38,21 @@ $(document).ready(function(){
 	});
 
 	//This fixes the interactive mod when the window hits the questions
-	$('.questions-mod').waypoint(function(direction){
+	$('.pinned').waypoint(function(direction){
 		if(direction=='down'){
 			$('.pinned').addClass('stuck');
 			$('.pinned').css({
 				'width':i_width
 			});
+			$('.questions-full').css({
+				'margin-top':i_height+52
+			});
 		}
 		if(direction=='up'){
 			$('.pinned').removeClass('stuck');
+			$('.questions-full').css({
+				'margin-top': 0
+			});
 		}
 	}, { offset: 120 }
 	);
