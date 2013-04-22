@@ -472,7 +472,7 @@ footer {
 .activity-nav-mod.fixed {
   position: fixed;
   top: 0;
-  background: #fff;
+  background-color: #f1f8f8;
   -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -971,7 +971,6 @@ input[type="submit"],
 button[type="submit"] {
   display: block;
   margin: 0 auto;
-  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   font-size: 15px;
   padding: 9px 13px;
   background: #f5a744;
@@ -1018,7 +1017,6 @@ button[type="submit"]:active {
 input[type="button"],
 button[type="button"] {
   border: 0;
-  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   font-size: 15px;
   padding: 9px 13px;
   background: #83cddd;
@@ -1117,6 +1115,7 @@ button[type="button"]:active {
   background-color: #ea890c;
 }
 .sidebar-hdr .h5 {
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   text-transform: none;
   color: #fff;
   font-size: 14px;
@@ -1308,6 +1307,7 @@ footer .footer-txt {
   margin-bottom: 13px;
   color: #666666;
   text-shadow: 0 1px 0 white;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
 }
 footer .footer-txt:last-child {
   margin-bottom: 0;
@@ -1401,7 +1401,6 @@ footer .footer-txt a:hover {
   font-size: 18px;
   font-weight: bold;
   margin: 36px 0 20px;
-  text-transform: uppercase;
   color: #666;
 }
 

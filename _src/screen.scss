@@ -58,7 +58,6 @@ footer {
 
 // Button mixin. By default, a btn will be blue. Pass two colors into include to change color scheme
 @mixin btn( $color1: lighten($btn-blue2, 5%), $color2: darken($btn-blue, 5%) ) {
-  font-family: $lato-reg;
   font-size: 15px;
   padding: 9px 13px;
   background: $color1;
@@ -151,12 +150,11 @@ footer {
   &.fixed {
     position: fixed;
     top: 0;
-    background: #fff;
+    background-color: lighten($lt-blue, 15%);
     @include box-shadow(0 2px 8px rgba(0, 0, 0, 0.2) );
     padding: 10px 6px;
     z-index: 9999;
   }
-
 }
 
 .activity-nav-logo {
@@ -483,7 +481,6 @@ footer {
     font-size: 16px;
     @include drk-txt-shadow($med-blue);
   }
-
 }
 
 .question-bd {
@@ -752,6 +749,7 @@ button[type="button"] {
 
   .h5 {
     // text-transform: uppercase;
+    font-family: $lato-reg;
     text-transform: none;
     color: #fff;
     font-size: 14px; 
@@ -980,7 +978,8 @@ footer {
     margin-bottom: 13px;
     color: $black-75;
     @include lt-txt-shadow(#fff);
-
+    font-family: $lato-reg;
+    
     &:last-child {
       margin-bottom: 0;
     }
@@ -1092,7 +1091,6 @@ footer {
   font-size: 18px;
   font-weight: bold;
   margin: 36px 0 20px;
-  text-transform: uppercase;
   color: #666;
 }
 
