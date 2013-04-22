@@ -89,7 +89,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -465,7 +465,6 @@ footer {
   color: #fff;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -496,7 +495,6 @@ footer {
   opacity: 0;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -546,7 +544,6 @@ footer {
   width: 40px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   height: 24px;
@@ -611,7 +608,6 @@ footer {
   display: block;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -670,12 +666,14 @@ footer {
   display: table;
   clear: both;
 }
-.l-7030 > .ui-block-1, .l-7030 > .ui-block.first {
+.l-7030 > .ui-block-1,
+.l-7030 > .ui-block.first {
   width: 69%;
   display: inline;
   float: right;
 }
-.l-7030 > .ui-block-2, .l-7030 > .ui-block.second {
+.l-7030 > .ui-block-2,
+.l-7030 > .ui-block.second {
   width: 29%;
   display: inline;
   float: left;
@@ -781,7 +779,7 @@ footer {
   text-shadow: 0 -1px 0 #a6a6a6;
 }
 .challenge .question-bd {
-  background: #f5f5f5;
+  background: whitesmoke;
 }
 
 .question-hdr, .question-hdr-collapse {
@@ -857,7 +855,7 @@ footer {
   font-weight: bold;
   font-size: 0.65em;
   padding: 3px 5px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   position: relative;
   top: -2px;
   -webkit-border-radius: 2px;
@@ -991,7 +989,6 @@ button[type="submit"] {
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   color: #fcfcfc;
@@ -1037,7 +1034,6 @@ button[type="button"] {
   text-align: center;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   color: #fcfcfc;
@@ -1165,7 +1161,6 @@ button[type="button"]:active {
   border-radius: 5px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1222,7 +1217,6 @@ button[type="button"]:active {
   text-shadow: 0 -1px 0 #35abc5;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1288,7 +1282,6 @@ button[type="button"]:active {
   box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1317,7 +1310,6 @@ footer .footer-txt a {
   font-weight: bold;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1342,7 +1334,6 @@ footer .footer-txt a:hover {
   border-radius: 3px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
@@ -1386,7 +1377,6 @@ footer .footer-txt a:hover {
   color: #6fc5d8;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
