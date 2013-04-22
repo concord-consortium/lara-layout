@@ -269,21 +269,21 @@ button {
 /* ! Custom Fonts					   			  */
 /* !============================================= */
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Light';
   font-style: normal;
   font-weight: 100;
   src: local("Lato Light"), local("Lato-Light"), url(http://fonts.googleapis.com/css?family=Lato:100) format("woff");
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Regular';
   font-style: normal;
   font-weight: 400;
   src: local("Lato Regular"), local("Lato-Regular"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Bold';
   font-style: normal;
   font-weight: 700;
   src: local("Lato Bold"), local("Lato-Bold"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
@@ -363,21 +363,21 @@ button {
 /* ! Custom Fonts					   			  */
 /* !============================================= */
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Light';
   font-style: normal;
   font-weight: 100;
   src: local("Lato Light"), local("Lato-Light"), url(http://fonts.googleapis.com/css?family=Lato:100) format("woff");
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Regular';
   font-style: normal;
   font-weight: 400;
   src: local("Lato Regular"), local("Lato-Regular"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format("woff");
 }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: 'Lato-Bold';
   font-style: normal;
   font-weight: 700;
   src: local("Lato Bold"), local("Lato-Bold"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
@@ -438,7 +438,7 @@ footer {
 .activity-mod {
   margin-bottom: 26px;
   position: relative;
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
 }
 
 .site-logo-mod {
@@ -486,7 +486,7 @@ footer {
   max-width: 100%;
 }
 .activity-nav-logo .h2 {
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: #f3951d;
@@ -703,13 +703,11 @@ footer {
 }
 
 .content-hdr {
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   margin-bottom: 30px;
 }
 .content-hdr .h2 {
-  font-family: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
   font-size: 36px;
-  font-weight: 100;
   letter-spacing: -1px;
   color: #f3951d;
 }
@@ -717,7 +715,7 @@ footer {
 .intro-mod {
   font-size: 16px;
   line-height: 1.45em;
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   margin-bottom: 39px;
 }
 .intro-mod .h4 {
@@ -791,6 +789,8 @@ footer {
   clear: both;
 }
 .question-hdr .h5, .question-hdr-collapse .h5 {
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: normal;
   position: relative;
   color: #fff;
   font-size: 16px;
@@ -1055,7 +1055,7 @@ button[type="button"]:active {
 .sidebar-mod {
   position: fixed;
   top: 20%;
-  font-family: Lato-Light, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Light", Helvetica, Arial, Verdana, sans-serif;
   text-align: left;
   -webkit-border-radius: 0 0 0 8px;
   -moz-border-radius: 0 0 0 8px;
@@ -1121,7 +1121,7 @@ button[type="button"]:active {
 
 .sidebar-bd {
   padding: 30px 30px 30px 105px;
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   font-size: 16px;
   -webkit-border-radius: 0 0 0 8px;
   -moz-border-radius: 0 0 0 8px;
@@ -1134,7 +1134,7 @@ button[type="button"]:active {
 }
 .sidebar-bd .h4 {
   font-size: 24px;
-  font-family: Lato-Regular, Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   font-weight: 400;
   margin-bottom: 14px;
 }
