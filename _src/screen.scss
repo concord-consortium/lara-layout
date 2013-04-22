@@ -899,10 +899,11 @@ button[type="button"] {
   }
 
   .h5 {
-    text-transform: uppercase;
+    // text-transform: uppercase;
+    text-transform: none;
     color: #fff;
     font-size: 14px; 
-    line-height: 1.05em;
+    line-height: 1.15em;
     margin-top: 33px;
     @include drk-txt-shadow($drk-orange);
   }

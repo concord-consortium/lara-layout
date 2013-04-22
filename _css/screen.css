@@ -1137,10 +1137,10 @@ button[type="button"]:active {
   background-color: #ea890c;
 }
 .sidebar-hdr .h5 {
-  text-transform: uppercase;
+  text-transform: none;
   color: #fff;
   font-size: 14px;
-  line-height: 1.05em;
+  line-height: 1.15em;
   margin-top: 33px;
   text-shadow: 0 -1px 0 #ba6c0a;
 }
