@@ -8,10 +8,27 @@
 // *********************************************
 
 
+//   1. Universal
+//   2. Molecular Workbench Helpers
+//   3. Project Styles
+//   4. Activity nav
+//   5. Layout modes
+//   6. Headline + Intro
+//   7. Sticky Interactives
+//   8. Interactive + Questions
+//   9. Styling for typographic elements
+//  10. Sidebar
+//  11. Related Module
+//  12. Image Types
+//  13. Activity Footer
+//  14. Site Footer
+//  15. Saved Label
+//  16. Activity Index Page
+
 
 
 // *********************************************
-// Universal
+//  1. Universal
 // *********************************************
 
 a     {   text-decoration: none; color: inherit; }
@@ -32,7 +49,7 @@ footer {
 
 
 // *********************************************
-// Molecular Workbench Helpers
+//  2. Molecular Workbench Helpers
 // *********************************************
 
 // Text shadows included on various elements
@@ -93,7 +110,7 @@ footer {
 
 
 // *********************************************
-// Project Styles
+//  3. Project Styles
 // *********************************************
 
 // Site Width
@@ -135,8 +152,9 @@ footer {
 }
 
 
-// Activity nav
-// --------------------------------
+// *********************************************
+//  4. Activity nav
+// *********************************************
 
 .activity-nav-mod {
   margin: 0 0 40px;
@@ -293,8 +311,10 @@ footer {
 } // end .pagination-item
 
 
-// Layout modes
-// --------------------------------
+
+// *********************************************
+//  5. Layout modes
+// *********************************************
 
 // Layout: 6040
 .l-6040 {
@@ -347,8 +367,9 @@ footer {
 
 
 
-// Headline + Intro
-// --------------------------------
+// *********************************************
+//  6. Headline + Intro
+// *********************************************
 
 
 // Headline block
@@ -390,8 +411,9 @@ footer {
 
 
 
-// Sticky Interactives
-// --------------------------------
+// *********************************************
+//  7. Sticky Interactives
+// *********************************************
 
 .sticky-wrapper { margin-bottom: 52px; }
 
@@ -423,8 +445,9 @@ footer {
 }
 
 
-// Interactive + Questions
-// --------------------------------
+// *********************************************
+//  8. Interactive + Questions
+// *********************************************
 
 .content-mod {
   @extend .cf;
@@ -490,8 +513,9 @@ footer {
 
 
 
-// Styling typographic elements
-// --------------------------------
+// *********************************************
+//  9. Styling for typographic elements
+// *********************************************
 
 .intro-mod,
 .content-mod {
@@ -680,7 +704,7 @@ button[type="button"] {
 
 
 // ******************************************
-// Sidebar
+//  10. Sidebar
 // ******************************************
 
 .sidebar-mod {
@@ -806,7 +830,7 @@ button[type="button"] {
 
 
 // ******************************************
-// Related Module
+//  11. Related Module
 // ******************************************
 
 .related-mod {
@@ -894,7 +918,7 @@ button[type="button"] {
 
 
 // ******************************************
-// Image Types
+//  12. Image Types
 // ******************************************
 
 .content-img {
@@ -956,7 +980,7 @@ button[type="button"] {
 
 
 // ******************************************
-// Activity Footer
+//  13. Activity Footer
 // ******************************************
 
 .activity-footer-mod {
@@ -970,7 +994,7 @@ button[type="button"] {
 
 
 // ******************************************
-// Site Footer
+//  14. Site Footer
 // ******************************************
 
 footer {
@@ -999,7 +1023,7 @@ footer {
 
 
 // ******************************************
-// Saved Label
+//  15. Saved Label
 // ******************************************
 
 #save {
@@ -1025,7 +1049,7 @@ footer {
 
 
 // ******************************************
-// Activity Index Page
+//  16. Activity Index Page
 // ******************************************
 
 .index-width {
