@@ -58,6 +58,7 @@ footer {
 
 // Button mixin. By default, a btn will be blue. Pass two colors into include to change color scheme
 @mixin btn( $color1: lighten($btn-blue2, 5%), $color2: darken($btn-blue, 5%) ) {
+  font-family: $lato-reg;
   font-size: 15px;
   padding: 9px 13px;
   background: $color1;
