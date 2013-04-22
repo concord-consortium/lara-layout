@@ -1053,6 +1053,8 @@ footer {
         &:before {
           background-color: lighten($med-blue, 27%);
           border: 1px solid lighten($med-blue, 18%);
+          color: $med-blue;
+          @include lt-txt-shadow(#fff);
         }
 
         a { 
