@@ -815,12 +815,15 @@ button[type="button"] {
   margin-bottom: 50px;
   margin-top: 50px;
   border-top: none;
+  background-color: lighten($related-green, 40%);
+  border: 1px solid lighten($related-green, 30%);
   @extend .mod-border-rounded;
   @extend .cf;
 }
 
 .related-hdr {
-  background-color: $med-blue;
+  // background-color: $med-blue;
+  background-color: $related-green;
   color: #fff;
   font-size: 18px;
   padding: 6px 13px;
@@ -1040,6 +1043,7 @@ footer {
     .intro-txt {
       font-size: 20px;
       line-height: 1.35em;
+      max-width: 100%;
     }
   } // end intro-mod
 
