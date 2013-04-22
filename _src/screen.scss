@@ -359,13 +359,12 @@ footer {
   margin-bottom: 30px;
 
   .h2 {
-    font-family: $lato-light;
+    // font-family: $lato-light;
     font-size: 36px; 
-    font-weight: 100;
+    // font-weight: normal;
     letter-spacing: -1px;
     color: $drk-orange;
   }
-  
 }
 
 
@@ -477,6 +476,8 @@ footer {
   clear: both;
 
   .h5 {
+    font-family: $lato-reg;
+    font-weight: normal;
     position: relative;
     color: #fff;
     font-size: 16px;
