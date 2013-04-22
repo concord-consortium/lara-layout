@@ -1338,7 +1338,7 @@ footer .footer-txt a:hover {
 }
 
 .index-width {
-  width: 700px;
+  width: 675px;
   margin: 0 auto;
 }
 
@@ -1356,7 +1356,7 @@ footer .footer-txt a:hover {
 .index-mod button[type="submit"] {
   font-size: 20px;
   padding: 20px 86px;
-  margin: 0 0 24px;
+  margin: 0 auto 24px;
 }
 .index-mod.intro-mod ul, .index-mod.intro-mod ol {
   font-size: 20px;
