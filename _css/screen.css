@@ -1365,8 +1365,8 @@ footer .footer-txt a:hover {
   margin-bottom: 24px;
 }
 .index-mod.intro-mod ul li:before, .index-mod.intro-mod ol li:before {
-  background-color: #bddfdf;
-  border: 1px solid #6fc5d8;
+  background-color: #dbf1f5;
+  border: 1px solid #b7e2ec;
 }
 .index-mod.intro-mod ul li a, .index-mod.intro-mod ol li a {
   color: #666;
