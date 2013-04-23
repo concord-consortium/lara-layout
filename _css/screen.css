@@ -970,6 +970,7 @@ button[type="submit"] {
   display: block;
   margin: 0 auto;
   font-size: 15px;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   padding: 9px 13px;
   background: #f5a744;
   background-image: -webkit-linear-gradient(top, #f5a744, #f88c22);
@@ -1015,6 +1016,7 @@ input[type="button"],
 button[type="button"] {
   border: 0;
   font-size: 15px;
+  font-family: "Lato-Regular", Helvetica, Arial, Verdana, sans-serif;
   padding: 9px 13px;
   background: #83cddd;
   background-image: -webkit-linear-gradient(top, #83cddd, #34a5be);
